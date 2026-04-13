@@ -1,5 +1,5 @@
 # reject — auto-generated, do not edit
-# entries: 492
+# entries: 521
 +.1oavsblobprodcus350.blob.core.windows.net
 +.1rx.io
 +.37bvsblobprodcus311.blob.core.windows.net
@@ -7,7 +7,6 @@
 +.51y5.net
 +.7box.vip
 +.a.ads1.msn.com
-+.a.ads2.msads.net
 +.a.ads2.msn.com
 +.a.adtng.com
 +.a.rad.msn.com
@@ -57,9 +56,11 @@
 +.asimov-win.settings.data.microsoft.com.akadns.net
 +.atom-data.io
 +.atrace.chelaile.net.cn
++.au-v10.events.data.microsoft.com
++.au-v20.events.data.microsoft.com
++.au.vortex-win.data.microsoft.com
 +.azwancan.trafficmanager.net
 +.b.ads1.msn.com
-+.b.ads2.msads.net
 +.b.rad.msn.com
 +.beizi.biz
 +.bingads.microsoft.com
@@ -104,6 +105,7 @@
 +.bn4sch101123110.wns.windows.com
 +.bn4sch101123202.wns.windows.com
 +.bn4sch102110124.wns.windows.com
++.browser.events.data.msn.com
 +.browser.pipe.aria.microsoft.com
 +.bs.serving-sys.com
 +.c.atdmt.com
@@ -229,7 +231,6 @@
 +.corpext.msitadfs.glbdns2.microsoft.com
 +.cpmstar.com
 +.cretgate.com
-+.cs1.wpc.v0cdn.net
 +.cy2.vortex.data.microsoft.com.akadns.net
 +.das-rpt-log.ucloud.cn
 +.data.flurry.com
@@ -238,6 +239,8 @@
 +.db5.settings-win.data.microsoft.com.akadns.net
 +.db5.settings.data.microsoft.com.akadns.net
 +.db5.vortex.data.microsoft.com.akadns.net
++.de-v20.events.data.microsoft.com
++.de.vortex-win.data.microsoft.com
 +.decide.mixpanel.com
 +.demdex.net
 +.df.telemetry.microsoft.com
@@ -249,10 +252,18 @@
 +.emogi.com
 +.ero-advertising.com
 +.eroadvertising.com
++.eu-v10.events.data.microsoft.com
++.eu-v10c.events.data.microsoft.com
++.eu-v20.events.data.microsoft.com
++.eu-watsonc.events.data.microsoft.com
++.eu.vortex-win.data.microsoft.com
++.events-sandbox.data.microsoft.com
++.events.data.microsoft.com
 +.evt.mxplay.com
 +.exoclick.com
 +.exosrv.com
 +.flex.msn.com
++.functional.events.data.microsoft.com
 +.g.msn.com
 +.g1.tagtic.cn
 +.geo.settings-win.data.microsoft.com.akadns.net
@@ -350,12 +361,13 @@
 +.imglnkd.com
 +.inner-active.mobi
 +.innovid.com
-+.insideruser.trafficmanager.net
 +.ipinyou.com
 +.ipinyou.com.cn
 +.ironbeast.io
 +.jads.co
 +.jl3.yjaxa.top
++.jp-v10.events.data.microsoft.com
++.jp-v20.events.data.microsoft.com
 +.js-agent.newrelic.com
 +.juicyads.com
 +.kepler-37b.com
@@ -384,6 +396,7 @@
 +.nexusrules.officeapps.live.com
 +.ns1p.net
 +.nw-umwatson.events.data.microsoft.com
++.oca.microsoft.com
 +.oca.telemetry.microsoft.com
 +.oca.telemetry.microsoft.us
 +.oct.pocoiq.cn
@@ -407,10 +420,12 @@
 +.schemas.microsoft.akadns.net
 +.secure.adnxs.com
 +.secure.flashtalking.com
++.self.events.data.microsoft.com
 +.sensors.umetrip.com.cn
 +.services.wes.df.telemetry.microsoft.com
 +.settings-sandbox.data.microsoft.com
 +.settings-win-ppe.data.microsoft.com
++.settings-win.data.microsoft.com
 +.settings.data.glbdns2.microsoft.com
 +.settingsfd-geo.trafficmanager.net
 +.sg2p.wns.windows.com
@@ -434,6 +449,7 @@
 +.tele.trafficmanager.net
 +.telecome.cn
 +.telecommand.telemetry.microsoft.com
++.telecommandsvc.microsoft.com
 +.telemetry.appex.bing.net
 +.telemetry.microsoft.com
 +.telemetry.remoteapp.windowsazure.com
@@ -445,6 +461,8 @@
 +.trafficfactory.biz
 +.tsyndicate.com
 +.uberads.com
++.uk-v20.events.data.microsoft.com
++.uk.vortex-win.data.microsoft.com
 +.uks.b.prd.ags.trafficmanager.net
 +.umwatson.events.data.microsoft.com
 +.umwatsonc.events.data.microsoft.com
@@ -452,17 +470,29 @@
 +.unimhk.com
 +.unioncom.cc
 +.upapi.net
++.us-v10.events.data.microsoft.com
++.us-v10c.events.data.microsoft.com
++.us-v20.events.data.microsoft.com
++.us.vortex-win.data.microsoft.com
++.us4-v20.events.data.microsoft.com
++.us5-v20.events.data.microsoft.com
 +.v10-win.vortex.data.microsoft.com.akadns.net
++.v10.events.data.microsoft.com
 +.v10.vortex-win.data.microsoft.com
++.v10c.events.data.microsoft.com
++.v20.events.data.microsoft.com
 +.v20.vortex-win.data.microsoft.com
 +.view.atdmt.com
 +.vortex-sandbox.data.microsoft.com
++.vortex-win-sandbox.data.microsoft.com
++.vortex-win.data.microsoft.com
 +.vortex.data.glbdns2.microsoft.com
 +.vortex.data.microsoft.com
 +.watson.live.com
 +.watson.microsoft.com
 +.watson.ppe.telemetry.microsoft.com
 +.watson.telemetry.microsoft.com
++.watsonc.events.data.microsoft.com
 +.web.vortex.data.microsoft.com
 +.wes.df.telemetry.microsoft.com
 +.weus2watcab01.blob.core.windows.net
@@ -479,7 +509,6 @@
 +.zhugeapi.com
 +.zhugeapi.net
 +.zhugeio.com
-+.ztd.dds.microsoft.com
 +.zxid-api.mobileservice.cn
 +.zxid-m.mobileservice.cn
 pinggai0.caixin.com
