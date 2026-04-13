@@ -10,7 +10,7 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1776089701",
+  "LastUpdated": "1776091655",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
@@ -43,8 +43,8 @@
   "BlockIp": [],
   "DomainStrategy": "IPIfNonMatch",
   "FakeDNS": "false",
-  "Geoipurl": "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/v2ray/happ/geoip.dat",
-  "Geositeurl": "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/v2ray/happ/geosite.dat",
+  "Geoipurl": "https://raw.githubusercontent.com/magiasegura/routing-public/main/v2ray/happ/geoip.dat",
+  "Geositeurl": "https://raw.githubusercontent.com/magiasegura/routing-public/main/v2ray/happ/geosite.dat",
   "ProxySites": [
     "geosite:github",
     "geosite:twitch-ads",
