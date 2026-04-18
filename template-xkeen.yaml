@@ -11,7 +11,7 @@ log-level: silent
 ipv6: false
 unified-delay: true
 tcp-concurrent: true
-global-client-fingerprint: chrome
+client-fingerprint: chrome
 external-controller: 0.0.0.0:9090
 secret: admin
 external-ui: ui
