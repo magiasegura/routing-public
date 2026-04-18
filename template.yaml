@@ -107,6 +107,8 @@ rule-providers:
   # === IP-check & VPN-detect → DIRECT (fatyzzz/max-list) ===
   ip-check:   { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.list", path: ./rs/ip-check.list, interval: 86400 }
   vpndetect:  { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/vpndetect.list", path: ./rs/vpndetect.list, interval: 86400 }
+  # === RU whitelist → DIRECT (gov, banks, RU-only services) ===
+  whitelist:  { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/whitelist.list", path: ./rs/whitelist.list, interval: 86400 }
   # === Consolidated IPs (format: text) ===
   proxy-ip:   { type: http, behavior: ipcidr, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy-ip.list", path: ./rs/proxy-ip.list, interval: 86400 }
   direct-ip:  { type: http, behavior: ipcidr, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ip.list", path: ./rs/direct-ip.list, interval: 86400 }
@@ -153,6 +155,8 @@ rules:
   # --- ip check & vpn detect → direct (fatyzzz/max-list) ---
   - RULE-SET,ip-check,DIRECT
   - RULE-SET,vpndetect,DIRECT
+  # --- RU whitelist → direct (gov, banks, RU-only) — before refilter ---
+  - RULE-SET,whitelist,DIRECT
   # --- AI ---
   - RULE-SET,ai,🤖 AI
   - PROCESS-NAME,com.openai.chat,🤖 AI

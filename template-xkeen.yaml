@@ -139,6 +139,7 @@ rule-providers:
   games:      { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.mrs", path: ./ruleset/games.mrs, interval: 86400 }
   ip-check:   { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.mrs", path: ./ruleset/ip-check.mrs, interval: 86400 }
   vpndetect:  { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/vpndetect.mrs", path: ./ruleset/vpndetect.mrs, interval: 86400 }
+  whitelist:  { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/whitelist.mrs", path: ./ruleset/whitelist.mrs, interval: 86400 }
   proxy-ip:   { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy-ip.mrs", path: ./ruleset/proxy-ip.mrs, interval: 86400 }
   direct-ip:  { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ip.mrs", path: ./ruleset/direct-ip.mrs, interval: 86400 }
   refilter-d: { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/refilter-domain.mrs", path: ./ruleset/refilter-domain.mrs, interval: 86400 }
@@ -193,6 +194,8 @@ rules:
   # --- ip check & vpn detect → direct ---
   - RULE-SET,ip-check,DIRECT
   - RULE-SET,vpndetect,DIRECT
+  # --- RU whitelist → direct (gov, banks, RU-only) — before refilter ---
+  - RULE-SET,whitelist,DIRECT
   # --- twitch ads → proxy (before twitch direct) ---
   - OR,((DOMAIN-SUFFIX,gql.twitch.tv),(DOMAIN-SUFFIX,usher.ttvnw.net)),VPN
   # --- services with dedicated groups ---
