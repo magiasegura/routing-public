@@ -10,7 +10,7 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1776590001",
+  "LastUpdated": "1776605017",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
@@ -51,6 +51,7 @@
     "geosite:youtube",
     "geosite:telegram",
     "geosite:google-deepmind",
+    "geosite:supercell",
     "geosite:category-geoblock-ru",
     "geosite:community"
   ],

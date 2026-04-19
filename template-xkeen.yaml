@@ -157,6 +157,7 @@ rule-providers:
   whatsapp-domain:  { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/whatsapp.mrs", path: ./ruleset/whatsapp-domain.mrs, interval: 86400 }
   roblox:           { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/roblox.mrs", path: ./ruleset/roblox-domains.mrs, interval: 86400 }
   roblox-ips:       { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/amatol/xkeen-configuration/raw/refs/heads/main/rules/roblox-ips.mrs", path: ./ruleset/roblox-ips.mrs, interval: 86400 }
+  supercell:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/supercell.mrs", path: ./ruleset/supercell.mrs, interval: 86400 }
   ai-bundle:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/category-ai-!cn.mrs", path: ./ruleset/category-ai-cn.mrs, interval: 86400 }
   # === Supplementary (not in IDTBX lists) ===
   geosite-private:  { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.mrs", path: ./ruleset/geosite-private.mrs, interval: 86400 }
@@ -209,6 +210,8 @@ rules:
   - RULE-SET,microsoft,Microsoft
   - RULE-SET,steam,Steam
   - RULE-SET,twitch,Twitch
+  # --- supercell → VPN (before games) ---
+  - RULE-SET,supercell,VPN
   # --- games ---
   - RULE-SET,games,Games
   - RULE-SET,games-direct,Games

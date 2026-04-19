@@ -104,6 +104,7 @@ rule-providers:
   youtube:    { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.list", path: ./rs/youtube.list, interval: 86400 }
   ai:         { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.list", path: ./rs/ai.list, interval: 86400 }
   games:      { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.list", path: ./rs/games.list, interval: 86400 }
+  supercell:  { type: http, behavior: domain, format: mrs,  url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/supercell.mrs", path: ./rs/supercell.mrs, interval: 86400 }
   # === IP-check & VPN-detect → DIRECT (fatyzzz/max-list) ===
   ip-check:   { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.list", path: ./rs/ip-check.list, interval: 86400 }
   vpndetect:  { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/vpndetect.list", path: ./rs/vpndetect.list, interval: 86400 }
@@ -166,6 +167,8 @@ rules:
   # --- discord ---
   - RULE-SET,discord,💬 Discord
   - PROCESS-NAME-REGEX,discord|vesktop,💬 Discord
+  # --- supercell → proxy (before games) ---
+  - RULE-SET,supercell,PROXY
   # --- rkn bypass (before direct!) ---
   - RULE-SET,refilter-d,PROXY
   - RULE-SET,refilter-community,PROXY
