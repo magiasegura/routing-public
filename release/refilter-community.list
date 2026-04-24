@@ -1,8 +1,7 @@
 # refilter-community — auto-generated, do not edit
 # source: 1andrevich/Re-filter-lists
-# entries: 672
+# entries: 633
 +.4pda.ru
-+.4pda.to
 +.a360.co
 +.abook-club.ru
 +.abs-0.twimg.com
@@ -31,7 +30,6 @@
 +.aimlab.gg
 +.aimlabs.com
 +.aimlabspages.kinsta.cloud
-+.aistudio.google.com
 +.alberta.ca
 +.amiibo.com
 +.anilibria.tv
@@ -94,15 +92,12 @@
 +.byteoversea.com
 +.caesium.app
 +.canva.com
-+.cdn-telegram.org
 +.cdn.betterttv.net
 +.cdn.id.supercell.com
 +.cdn.oaistatic.com
 +.cdninstagram.com
 +.certifytheweb.com
-+.chat.com
 +.chat.openai.com
-+.chatgpt.com
 +.chatgpt.livekit.cloud
 +.chaturbate.com
 +.checkout.buckaroo.nl
@@ -113,7 +108,6 @@
 +.clamav.net
 +.clashofclans.com
 +.clashroyaleapp.com
-+.claude.ai
 +.cloud.mongodb.com
 +.cloudflare-dns.com
 +.cloudflare-ech.com
@@ -122,7 +116,6 @@
 +.community.cisco.com
 +.community.instagram.com
 +.copilot-proxy.githubusercontent.com
-+.copilot.microsoft.com
 +.crunchyroll.com
 +.curseforge.com
 +.czx.to
@@ -213,19 +206,16 @@
 +.gallery.zetalliance.org
 +.gallerycdn.vsassets.io
 +.game.brawlstarsgame.com
-+.gemini.google.com
 +.geni.us
 +.genius.com
 +.geo.captcha-delivery.com
 +.geode-sdk.org
-+.ggpht.com
 +.ghostrc.game.idtech.services
 +.githubcopilot.com
 +.gitlab.io
 +.gllto.glpals.com
 +.gnome-look.org
 +.googletagmanager.com
-+.googlevideo.com
 +.gordonua.com
 +.gql.twitch.tv
 +.grammarly.com
@@ -235,7 +225,6 @@
 +.grok.com
 +.gtagarage.com
 +.gvt1.com
-+.habr.com
 +.hath.network
 +.hbomax.com
 +.hdrezka.ag
@@ -364,18 +353,14 @@
 +.notion.com
 +.notion.site
 +.notion.so
-+.ntc.party
 +.nyaa.si
 +.nyaa.tracker.wf
-+.oaistatic.com
-+.oaiusercontent.com
 +.oasis.app
 +.ohmyz.sh
 +.omtrdc.net
 +.omv-extras.org
 +.onlineradiobox.com
 +.onlinesim.ru
-+.openai.com
 +.openai.com.cdn.cloudflare.net
 +.openaiapi-site.azureedge.net
 +.openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
@@ -472,7 +457,6 @@
 +.seedoff.zannn.top
 +.semnasem.org
 +.sendgrid.net
-+.sentry.io
 +.serpstat.com
 +.services.gearboxsoftware.com
 +.shift.services.gearbox.com
@@ -529,23 +513,12 @@
 +.support.ruckuswireless.com
 +.swagger.io
 +.sysdig.com
-+.t.me
 +.t3.chat
 +.tailscale.com
-+.tdesktop.com
-+.telega.one
-+.telegra.ph
-+.telegram-cdn.org
 +.telegram.app
 +.telegram.com
 +.telegram.dev
-+.telegram.dog
-+.telegram.me
-+.telegram.org
-+.telegram.space
-+.telesco.pe
 +.terraform.io
-+.tg.dev
 +.themoviedb.org
 +.tidal.com
 +.tik-tokapi.com
@@ -577,7 +550,6 @@
 +.turn.livekit.cloud
 +.tutanota.com
 +.twimg.com
-+.tx.me
 +.ubnt.com
 +.ufile.io
 +.ui.com
@@ -619,7 +591,6 @@
 +.wheather.com
 +.whispersystems.org
 +.white.instagram.com
-+.wide-youtube.l.google.com
 +.wii-u.com
 +.wiifit.com
 +.wiifitu.com
@@ -658,18 +629,8 @@
 +.xn--mts47c3w9b1qr.cn
 +.xn--mts47c3w9b1qr.net
 +.xsts.auth.xboxlive.com
-+.youtu.be
-+.youtube-nocookie.com
-+.youtube-ui.l.google.com
-+.youtube.com
-+.youtube.googleapis.com
-+.youtubeembeddedplayer.googleapis.com
-+.youtubei.googleapis.com
-+.youtubekids.com
 +.yt-video-upload.l.google.com
-+.yt.be
 +.yt3.ggpht.com
-+.ytimg.com
 +.znanija.com
 +.zohomail.com
 +.zolika1351.pages.dev

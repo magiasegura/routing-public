@@ -164,7 +164,6 @@ rule-providers:
   geoip-private:    { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.mrs", path: ./ruleset/geoip-private.mrs, interval: 86400 }
   geoip-ru:         { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/ru.mrs", path: ./ruleset/geoip-ru.mrs, interval: 86400 }
   geoip-by:         { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/by.mrs", path: ./ruleset/geoip-by.mrs, interval: 86400 }
-  tiktok:           { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/tiktok.mrs", path: ./ruleset/tiktok.mrs, interval: 86400 }
   xiaomi:           { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/xiaomi.mrs", path: ./ruleset/xiaomi.mrs, interval: 86400 }
   drweb:            { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/drweb.mrs", path: ./ruleset/drweb.mrs, interval: 86400 }
   win-extra:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-extra.mrs", path: ./ruleset/win-extra.mrs, interval: 86400 }
@@ -227,7 +226,6 @@ rules:
   # --- direct: RU services & other ---
   - RULE-SET,direct,DIRECT
   - RULE-SET,drweb,DIRECT
-  - RULE-SET,tiktok,DIRECT
   - RULE-SET,win-extra,DIRECT
   - RULE-SET,win-update,DIRECT
   - RULE-SET,xiaomi,DIRECT
