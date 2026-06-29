@@ -46,6 +46,18 @@ proxy-providers:
       tfo: true
       mptcp: true
       udp: true
+    header:
+      User-Agent:
+        - "Mihomo"
+      x-hwid:
+        - "<SYSTEM_NAME>"
+      x-device-os:
+        - "xKeen"
+      x-ver-os:
+        - "XKeen 2.0 Beta"
+      x-device-model:
+        - "<ROUTER_MODEL>"
+
 
 proxy-groups:
   - name: VPN
