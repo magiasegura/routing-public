@@ -194,8 +194,8 @@ rule-providers:
     # - DOMAIN-KEYWORD,somesite
 
 rules:
-  # --- system: block QUIC & DoQ ---
-  - AND,((NETWORK,udp),(DST-PORT,443)),REJECT
+  # --- system: block QUIC & DoQ (except Roblox — needs UDP:443 for game traffic) ---
+  - AND,((NETWORK,udp),(DST-PORT,443),(NOT,((RULE-SET,roblox)))),REJECT
   - AND,((NETWORK,udp),(DST-PORT,853)),REJECT
   # --- private networks ---
   - RULE-SET,geosite-private,DIRECT,no-resolve
@@ -216,6 +216,8 @@ rules:
   - OR,((RULE-SET,ai),(RULE-SET,ai-bundle)),AI
   - OR,((RULE-SET,telegram-domain),(RULE-SET,telegram-ips)),Telegram
   - RULE-SET,whatsapp-domain,WhatsApp
+  # --- roblox: arkoselabs captcha must go DIRECT (blocks datacenter IPs via VPN) ---
+  - DOMAIN-SUFFIX,arkoselabs.com,DIRECT
   - OR,((RULE-SET,roblox),(RULE-SET,roblox-ips)),Roblox
   - RULE-SET,cloudflare,Cloudflare
   - RULE-SET,microsoft,Microsoft
