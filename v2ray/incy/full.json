@@ -10,7 +10,7 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1787407078",
+  "LastUpdated": "1787407775",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
@@ -28,6 +28,7 @@
     "geosite:pinterest",
     "geosite:faceit",
     "geosite:ip-check",
+    "geosite:google-play",
     "geosite:vpndetect"
   ],
   "DirectIp": [
@@ -50,7 +51,6 @@
     "geosite:youtube",
     "geosite:telegram",
     "geosite:ai",
-    "geosite:google-play",
     "geosite:google-deepmind",
     "geosite:category-geoblock-ru",
     "geosite:community"
