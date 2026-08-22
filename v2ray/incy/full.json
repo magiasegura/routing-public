@@ -10,7 +10,7 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1787404169",
+  "LastUpdated": "1787407078",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
@@ -19,7 +19,6 @@
     "geosite:whitelist",
     "geosite:microsoft",
     "geosite:apple",
-    "geosite:google-play",
     "geosite:epicgames",
     "geosite:riot",
     "geosite:escapefromtarkov",
@@ -51,6 +50,7 @@
     "geosite:youtube",
     "geosite:telegram",
     "geosite:ai",
+    "geosite:google-play",
     "geosite:google-deepmind",
     "geosite:category-geoblock-ru",
     "geosite:community"
