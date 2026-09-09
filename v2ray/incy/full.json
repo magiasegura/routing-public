@@ -1,7 +1,7 @@
 {
   "Name": "IDTBX (full)",
   "GlobalProxy": "true",
-  "UseChunkFiles": "true",
+  "UseChunkFiles": "false",
   "RemoteDns": "8.8.8.8",
   "DomesticDns": "77.88.8.8",
   "RemoteDNSType": "DoH",
@@ -10,35 +10,21 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1788959103",
+  "LastUpdated": "1788961328",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
-    "geosite:private",
-    "geosite:category-ru",
     "geosite:whitelist",
-    "geosite:microsoft",
-    "geosite:apple",
-    "geosite:epicgames",
-    "geosite:riot",
-    "geosite:escapefromtarkov",
-    "geosite:steam",
-    "geosite:origin",
-    "geosite:twitch",
-    "geosite:pinterest",
-    "geosite:faceit",
     "geosite:ip-check",
-    "geosite:google-play",
-    "geosite:vpndetect"
+    "geosite:vpndetect",
+    "geosite:microsoft",
+    "geosite:direct"
   ],
   "DirectIp": [
-    "geoip:private",
-    "geoip:whitelist"
+    "geoip:direct-ip"
   ],
   "BlockSites": [
-    "geosite:win-spy",
-    "geosite:torrent",
-    "geosite:category-ads"
+    "geosite:reject"
   ],
   "BlockIp": [],
   "DomainStrategy": "IPIfNonMatch",
@@ -46,17 +32,17 @@
   "Geoipurl": "https://raw.githubusercontent.com/magiasegura/routing-public/main/v2ray/geoip.dat",
   "Geositeurl": "https://raw.githubusercontent.com/magiasegura/routing-public/main/v2ray/geosite.dat",
   "ProxySites": [
-    "geosite:github",
-    "geosite:twitch-ads",
     "geosite:youtube",
-    "geosite:telegram",
+    "geosite:discord",
     "geosite:ai",
-    "geosite:google-deepmind",
-    "geosite:category-geoblock-ru",
-    "geosite:community"
+    "geosite:crypto",
+    "geosite:games",
+    "geosite:proxy",
+    "geosite:refilter-domain",
+    "geosite:refilter-community"
   ],
   "ProxyIp": [
-    "geoip:telegram",
-    "geoip:blocked-ru"
+    "geoip:proxy-ip",
+    "geoip:refilter-ip"
   ]
 }

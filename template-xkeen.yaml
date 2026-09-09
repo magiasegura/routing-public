@@ -1,5 +1,11 @@
 # IDTBX MihoMo template for Keenetic + xkeen
 # github.com/magiasegura/routing-public
+#
+# Consolidated rule-set structure — 16 rule-providers, 7 groups.
+# All per-service categories (Apple/Microsoft/Steam/Twitch/Telegram/WhatsApp/
+# Cloudflare/Roblox/etc.) are baked into the consolidated proxy/direct/games
+# lists during build. The xkeen router does not need process rules — those
+# are for desktop MihoMo only and live in release/proc-*.yaml.
 
 port: 7890
 socks-port: 7891
@@ -19,15 +25,27 @@ external-ui-url: https://github.com/Zephyruso/zashboard/releases/latest/download
 
 profile:
   store-selected: true
+  store-fake-ip: true
 
 sniffer:
   enable: true
+  override-destination: false
   parse-pure-ip: true
-  force-dns-mapping: true
   sniff:
-    HTTP: null
-    TLS: null
-    QUIC: null
+    HTTP: { ports: [80, 8080-8880] }
+    TLS:  { ports: [443, 8443] }
+    QUIC: { ports: [443] }
+  skip-dst-address:
+    - 224.0.0.0/3
+    - 10.0.0.0/8
+    - 127.0.0.0/8
+    - 100.64.0.0/10
+    - 172.16.0.0/12
+    - 198.18.0.0/15
+    - 169.254.0.0/16
+    - 192.168.0.0/16
+    - fc00::/7
+    - fe80::/10
 
 proxy-providers:
   sub:
@@ -84,34 +102,6 @@ proxy-groups:
     proxies:
       - VPN
       - DIRECT
-  - name: Telegram
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-    type: select
-    include-all: true
-    proxies:
-      - VPN
-      - DIRECT
-  - name: WhatsApp
-    icon: https://github.com/OMchik33/Whatsapp-icon/blob/master/icons/whatsapp_194x194.png?raw=true
-    type: select
-    include-all: true
-    proxies:
-      - VPN
-      - DIRECT
-  - name: Cloudflare
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
-    type: select
-    include-all: true
-    proxies:
-      - VPN
-      - DIRECT
-  - name: Microsoft
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
-    type: select
-    include-all: true
-    proxies:
-      - DIRECT
-      - VPN
   - name: Games
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
     type: select
@@ -119,74 +109,47 @@ proxy-groups:
     proxies:
       - DIRECT
       - VPN
-  - name: Steam
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
+  - name: Microsoft
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     include-all: true
     proxies:
       - DIRECT
       - VPN
-  - name: Roblox
-    icon: https://github.com/amatol/xkeen-configuration/raw/refs/heads/main/group-icons/roblox.png
+  - name: Crypto
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bitcoin.png
     type: select
     include-all: true
     proxies:
-      - DIRECT
       - VPN
-  - name: Twitch
-    icon: https://img.icons8.com/3d-fluency/94/twitch.png
+      - DIRECT
+  - name: RU-Custom
     type: select
-    include-all: true
     proxies:
       - DIRECT
       - VPN
 
 rule-providers:
-  # === IDTBX consolidated lists — mrs binary format (auto-updated) ===
-  reject:     { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.mrs", path: ./ruleset/reject.mrs, interval: 86400 }
-  proxy:      { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.mrs", path: ./ruleset/proxy.mrs, interval: 86400 }
-  direct:     { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.mrs", path: ./ruleset/direct.mrs, interval: 86400 }
-  youtube:    { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.mrs", path: ./ruleset/youtube.mrs, interval: 86400 }
-  ai:         { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.mrs", path: ./ruleset/ai.mrs, interval: 86400 }
-  games:      { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.mrs", path: ./ruleset/games.mrs, interval: 86400 }
-  ip-check:   { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.mrs", path: ./ruleset/ip-check.mrs, interval: 86400 }
-  vpndetect:  { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/vpndetect.mrs", path: ./ruleset/vpndetect.mrs, interval: 86400 }
-  whitelist:  { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/whitelist.mrs", path: ./ruleset/whitelist.mrs, interval: 86400 }
-  proxy-ip:   { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy-ip.mrs", path: ./ruleset/proxy-ip.mrs, interval: 86400 }
-  direct-ip:  { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ip.mrs", path: ./ruleset/direct-ip.mrs, interval: 86400 }
-  refilter-d: { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/refilter-domain.mrs", path: ./ruleset/refilter-domain.mrs, interval: 86400 }
-  refilter-ip: { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/refilter-ip.mrs", path: ./ruleset/refilter-ip.mrs, interval: 86400 }
+  # === IDTBX consolidated lists — mrs binary format (auto-updated every 4h) ===
+  reject:             { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.mrs",             path: ./ruleset/reject.mrs,             interval: 86400 }
+  proxy:              { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.mrs",              path: ./ruleset/proxy.mrs,              interval: 86400 }
+  direct:             { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.mrs",             path: ./ruleset/direct.mrs,             interval: 86400 }
+  microsoft:          { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/microsoft.mrs",          path: ./ruleset/microsoft.mrs,          interval: 86400 }
+  youtube:            { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.mrs",            path: ./ruleset/youtube.mrs,            interval: 86400 }
+  discord:            { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/discord.mrs",            path: ./ruleset/discord.mrs,            interval: 86400 }
+  ai:                 { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.mrs",                 path: ./ruleset/ai.mrs,                 interval: 86400 }
+  games:              { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.mrs",              path: ./ruleset/games.mrs,              interval: 86400 }
+  crypto:             { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/crypto.mrs",             path: ./ruleset/crypto.mrs,             interval: 86400 }
+  ip-check:           { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.mrs",           path: ./ruleset/ip-check.mrs,           interval: 86400 }
+  vpndetect:          { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/vpndetect.mrs",          path: ./ruleset/vpndetect.mrs,          interval: 86400 }
+  whitelist:          { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/whitelist.mrs",          path: ./ruleset/whitelist.mrs,          interval: 86400 }
+  proxy-ip:           { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy-ip.mrs",           path: ./ruleset/proxy-ip.mrs,           interval: 86400 }
+  direct-ip:          { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ip.mrs",          path: ./ruleset/direct-ip.mrs,          interval: 86400 }
+  refilter-domain:    { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/refilter-domain.mrs",    path: ./ruleset/refilter-domain.mrs,    interval: 86400 }
+  refilter-ip:        { type: http, behavior: ipcidr, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/refilter-ip.mrs",        path: ./ruleset/refilter-ip.mrs,        interval: 86400 }
   refilter-community: { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/refilter-community.mrs", path: ./ruleset/refilter-community.mrs, interval: 86400 }
-  crypto:     { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/crypto.mrs", path: ./ruleset/crypto.mrs, interval: 86400 }
-  # === Services with dedicated groups (mrs) ===
-  microsoft:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft.mrs", path: ./ruleset/microsoft.mrs, interval: 86400 }
-  steam:            { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam.mrs", path: ./ruleset/steam.mrs, interval: 86400 }
-  twitch:           { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/twitch.mrs", path: ./ruleset/twitch.mrs, interval: 86400 }
-  cloudflare:       { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cloudflare.mrs", path: ./ruleset/cloudflare.mrs, interval: 86400 }
-  telegram-domain:  { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs", path: ./ruleset/telegram-domain.mrs, interval: 86400 }
-  telegram-ips:     { type: http, behavior: ipcidr, format: yaml, url: "https://raw.githubusercontent.com/OMchik33/custom-rules/refs/heads/main/mihomo/telegram-ips.yaml", path: ./ruleset/telegram-ips.yaml, interval: 86400 }
-  discord-domains:  { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/discord.mrs", path: ./ruleset/discord-domains.mrs, interval: 86400 }
-  discord-voice-ips: { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/discord-voice-ip-list.mrs", path: ./ruleset/discord-voice-ips.mrs, interval: 86400 }
-  whatsapp-domain:  { type: http, behavior: domain, format: mrs, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/whatsapp.mrs", path: ./ruleset/whatsapp-domain.mrs, interval: 86400 }
-  roblox:           { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/roblox.mrs", path: ./ruleset/roblox-domains.mrs, interval: 86400 }
-  roblox-ips:       { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/amatol/xkeen-configuration/raw/refs/heads/main/rules/roblox-ips.mrs", path: ./ruleset/roblox-ips.mrs, interval: 86400 }
-  supercell:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/supercell.mrs", path: ./ruleset/supercell.mrs, interval: 86400 }
-  google-play:      { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google-play.mrs", path: ./ruleset/google-play.mrs, interval: 86400 }
-  ai-bundle:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/category-ai-!cn.mrs", path: ./ruleset/category-ai-cn.mrs, interval: 86400 }
-  # === Supplementary (not in IDTBX lists) ===
-  geosite-private:  { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.mrs", path: ./ruleset/geosite-private.mrs, interval: 86400 }
-  geoip-private:    { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.mrs", path: ./ruleset/geoip-private.mrs, interval: 86400 }
-  geoip-ru:         { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/ru.mrs", path: ./ruleset/geoip-ru.mrs, interval: 86400 }
-  geoip-by:         { type: http, behavior: ipcidr, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/by.mrs", path: ./ruleset/geoip-by.mrs, interval: 86400 }
-  xiaomi:           { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/xiaomi.mrs", path: ./ruleset/xiaomi.mrs, interval: 86400 }
-  drweb:            { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/drweb.mrs", path: ./ruleset/drweb.mrs, interval: 86400 }
-  win-extra:        { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-extra.mrs", path: ./ruleset/win-extra.mrs, interval: 86400 }
-  win-update:       { type: http, behavior: domain, format: mrs, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.mrs", path: ./ruleset/win-update.mrs, interval: 86400 }
-  games-direct:     { type: http, behavior: classical, format: yaml, url: "https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/games-direct.yaml", path: ./ruleset/games-direct.yaml, interval: 86400 }
-  torrent-clients:  { type: http, behavior: classical, format: yaml, url: "https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/torrent-clients.yaml", path: ./ruleset/torrent-clients.yaml, interval: 86400 }
-  torrent-trackers: { type: http, behavior: domain, format: mrs, url: "https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/torrent-trackers.mrs", path: ./ruleset/torrent-trackers.mrs, interval: 86400 }
-  ru-bundle:        { type: http, behavior: domain, format: mrs, url: "https://github.com/legiz-ru/mihomo-rule-sets/raw/main/ru-bundle/rule.mrs", path: ./ruleset/ru-bundle.mrs, interval: 86400 }
-  # === Inline: add your custom domains here ===
+
+  # === Inline: hand-curated overrides ===
   ru-custom-proxy:
     type: inline
     behavior: classical
@@ -194,69 +157,70 @@ rule-providers:
     # examples:
     # - DOMAIN-SUFFIX,example.com
     # - DOMAIN-KEYWORD,somesite
+  ru-custom-direct:
+    type: inline
+    behavior: classical
+    payload: []
+    # examples:
+    # - DOMAIN-SUFFIX,mybank.ru
+    # - DOMAIN-KEYWORD,internal
 
 rules:
-  # --- system: kill IPv6 (RU carriers often leak real IP via v6 around VPN) ---
-  - IP-CIDR6,::/0,REJECT-DROP,no-resolve
-  # --- system: block QUIC & DoQ (except Roblox — needs UDP:443 for game traffic) ---
-  - AND,((NETWORK,udp),(DST-PORT,443),(NOT,((RULE-SET,roblox)))),REJECT
-  - AND,((NETWORK,udp),(DST-PORT,853)),REJECT
-  # --- private networks ---
-  - RULE-SET,geosite-private,DIRECT,no-resolve
-  - RULE-SET,geoip-private,DIRECT
+  # --- local & system ---
   - RULE-SET,direct-ip,DIRECT,no-resolve
-  # --- block: ads & telemetry (reject.list includes win-spy) ---
+  - IP-CIDR6,::/0,REJECT-DROP,no-resolve
+
+  # --- ads & telemetry ---
   - RULE-SET,reject,REJECT-DROP
-  # --- ip check & vpn detect → direct ---
+
+  # --- IP-probe & VPN-detect endpoints must report the real IP ---
   - RULE-SET,ip-check,DIRECT
   - RULE-SET,vpndetect,DIRECT
+
   # --- RU whitelist → direct (gov, banks, RU-only) — before refilter ---
   - RULE-SET,whitelist,DIRECT
-  # --- twitch ads → proxy (before twitch direct) ---
-  - OR,((DOMAIN-SUFFIX,gql.twitch.tv),(DOMAIN-SUFFIX,usher.ttvnw.net)),VPN
-  # --- services with dedicated groups ---
-  - RULE-SET,youtube,YouTube
-  - OR,((RULE-SET,discord-domains),(RULE-SET,discord-voice-ips)),Discord
-  - OR,((RULE-SET,ai),(RULE-SET,ai-bundle)),AI
-  # --- crypto exchanges → VPN (IP-blocked in RU) ---
-  - RULE-SET,crypto,VPN
-  - OR,((RULE-SET,telegram-domain),(RULE-SET,telegram-ips)),Telegram
-  - RULE-SET,whatsapp-domain,WhatsApp
-  # --- roblox: arkoselabs captcha must go DIRECT (blocks datacenter IPs via VPN) ---
-  - DOMAIN-SUFFIX,arkoselabs.com,DIRECT
-  - OR,((RULE-SET,roblox),(RULE-SET,roblox-ips)),Roblox
-  - RULE-SET,cloudflare,Cloudflare
-  - RULE-SET,microsoft,Microsoft
-  - RULE-SET,steam,Steam
-  - RULE-SET,twitch,Twitch
-  # --- google play → VPN (before direct; overrides direct.mrs) ---
-  - RULE-SET,google-play,VPN
-  # --- supercell → VPN (before games) ---
-  - RULE-SET,supercell,VPN
-  # --- games ---
-  - RULE-SET,games,Games
-  - RULE-SET,games-direct,Games
-  # --- torrents → direct ---
-  - OR,((RULE-SET,torrent-clients),(RULE-SET,torrent-trackers)),DIRECT
-  # --- custom + proxy ---
+
+  # --- user-controlled overrides ---
+  - RULE-SET,ru-custom-direct,DIRECT
   - RULE-SET,ru-custom-proxy,VPN
+
+  # --- proxied services with dedicated groups (order: specific → general) ---
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,discord,Discord
+  - RULE-SET,ai,AI
+  - RULE-SET,crypto,Crypto
+
+  # --- games (before proxy/direct to override both) ---
+  - RULE-SET,games,Games
+
+  # --- microsoft (before proxy/direct) ---
+  - RULE-SET,microsoft,Microsoft
+
+  # --- proxy: catch-all for RU-blocked domains (telegram/whatsapp/openai/…) ---
   - RULE-SET,proxy,VPN
-  # --- RKN bypass (before direct!) ---
-  - RULE-SET,refilter-d,VPN
+
+  # --- RKN bypass, before the direct sets that would otherwise override ---
+  - RULE-SET,refilter-domain,VPN
   - RULE-SET,refilter-community,VPN
-  - RULE-SET,ru-bundle,VPN
-  # --- direct: RU services & other ---
-  # RU TLDs → DIRECT (catches сайт.рф, дом.москва and friends without maintaining a list)
-  - OR,((DOMAIN-SUFFIX,ru),(DOMAIN-SUFFIX,su),(DOMAIN-SUFFIX,moscow),(DOMAIN-SUFFIX,xn--p1ai),(DOMAIN-SUFFIX,xn--p1acf),(DOMAIN-SUFFIX,xn--80asehdb),(DOMAIN-SUFFIX,xn--c1avg),(DOMAIN-SUFFIX,xn--80aswg),(DOMAIN-SUFFIX,xn--80adxhks),(DOMAIN-SUFFIX,xn--d1acj3b)),DIRECT
+
+  # --- direct: RU services + apple/microsoft/steam/twitch/xiaomi/… ---
   - RULE-SET,direct,DIRECT
-  - RULE-SET,drweb,DIRECT
-  - RULE-SET,win-extra,DIRECT
-  - RULE-SET,win-update,DIRECT
-  - RULE-SET,xiaomi,DIRECT
-  - RULE-SET,geoip-ru,DIRECT
-  - RULE-SET,geoip-by,DIRECT
-  # --- IPs ---
+
+  # --- remaining Russian TLDs → DIRECT ---
+  - DOMAIN-SUFFIX,ru,DIRECT
+  - DOMAIN-SUFFIX,su,DIRECT
+  - DOMAIN-SUFFIX,moscow,DIRECT
+  - DOMAIN-SUFFIX,xn--p1ai,DIRECT
+  - DOMAIN-SUFFIX,xn--p1acf,DIRECT
+  - DOMAIN-SUFFIX,xn--80asehdb,DIRECT
+  - DOMAIN-SUFFIX,xn--c1avg,DIRECT
+  - DOMAIN-SUFFIX,xn--80aswg,DIRECT
+  - DOMAIN-SUFFIX,xn--80adxhks,DIRECT
+  - DOMAIN-SUFFIX,xn--d1acj3b,DIRECT
+
+  # --- IP fallbacks ---
   - RULE-SET,proxy-ip,VPN,no-resolve
   - RULE-SET,refilter-ip,VPN,no-resolve
+
   # --- fallback: everything else → VPN ---
   - MATCH,VPN
