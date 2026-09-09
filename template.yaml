@@ -1,6 +1,6 @@
-# MihoMo template for Remnawave
+# MihoMo template for Remnawave (desktop)
 # github.com/magiasegura/routing-public
-# Groups: VPN, YouTube, Discord, AI, Games, RU
+# Groups: VPN, YouTube, Discord, AI, Games, Microsoft, Crypto, RU
 
 mixed-port: 7890
 mode: rule
@@ -89,6 +89,8 @@ proxy-groups:
   - { name: 💬 Discord, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🛡️ VPN] }
   - { name: 🤖 AI, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Dark/Bot.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🛡️ VPN] }
   - { name: 🎮 Игры, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🔓 DIRECT, 🛡️ VPN] }
+  - { name: 🪟 Microsoft, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🔓 DIRECT, 🛡️ VPN] }
+  - { name: 💰 Crypto, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bitcoin.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🛡️ VPN, 🔓 DIRECT] }
   - { name: 🏠 RU, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Russia.png", type: select, remnawave: { include-proxies: false }, proxies: [🔓 DIRECT, 🛡️ VPN] }
   # --- hidden ---
   - { name: ⚡️ Авто, type: url-test, tolerance: 150, url: "https://cp.cloudflare.com/generate_204", interval: 300, hidden: true, remnawave: { include-proxies: false }, include-all: true }
@@ -101,10 +103,12 @@ rule-providers:
   reject:     { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.list", path: ./rs/reject.list, interval: 86400 }
   proxy:      { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.list", path: ./rs/proxy.list, interval: 86400 }
   direct:     { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.list", path: ./rs/direct.list, interval: 86400 }
+  microsoft:  { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/microsoft.list", path: ./rs/microsoft.list, interval: 86400 }
   youtube:    { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.list", path: ./rs/youtube.list, interval: 86400 }
+  discord:    { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/discord.list", path: ./rs/discord.list, interval: 86400 }
   ai:         { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.list", path: ./rs/ai.list, interval: 86400 }
   games:      { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.list", path: ./rs/games.list, interval: 86400 }
-  supercell:  { type: http, behavior: domain, format: mrs,  url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/supercell.mrs", path: ./rs/supercell.mrs, interval: 86400 }
+  crypto:     { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/crypto.list", path: ./rs/crypto.list, interval: 86400 }
   # === IP-check & VPN-detect → DIRECT (fatyzzz/max-list) ===
   ip-check:   { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.list", path: ./rs/ip-check.list, interval: 86400 }
   vpndetect:  { type: http, behavior: domain, format: text, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/vpndetect.list", path: ./rs/vpndetect.list, interval: 86400 }
@@ -121,34 +125,22 @@ rule-providers:
   proc-games:   { type: http, behavior: classical, format: yaml, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-games.yaml", path: ./rs/proc-games.yaml, interval: 86400 }
   proc-torrent: { type: http, behavior: classical, format: yaml, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-torrent.yaml", path: ./rs/proc-torrent.yaml, interval: 86400 }
   proc-ru:      { type: http, behavior: classical, format: yaml, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-ru.yaml", path: ./rs/proc-ru.yaml, interval: 86400 }
-  # === Discord (inline — only 28 domains) ===
-  discord:
+  # === Inline user overrides ===
+  ru-custom-proxy:
     type: inline
-    behavior: domain
-    payload:
-      - "+.discord.com"
-      - "+.discord.gg"
-      - "+.discord.media"
-      - "+.discordapp.com"
-      - "+.discordapp.net"
-      - "+.discordcdn.com"
-      - "+.discord.co"
-      - "+.discord.design"
-      - "+.discord.dev"
-      - "+.discord.gift"
-      - "+.discord.gifts"
-      - "+.discord.new"
-      - "+.discord.store"
-      - "+.discord.tools"
-      - "+.dis.gd"
-      - "+.bigbeans.gg"
+    behavior: classical
+    payload: []
+    # examples:
+    # - DOMAIN-SUFFIX,example.com
+  ru-custom-direct:
+    type: inline
+    behavior: classical
+    payload: []
 
 rules:
   # --- system ---
   - RULE-SET,direct-ip,DIRECT,no-resolve
   - IP-CIDR,::/0,REJECT-DROP,no-resolve
-  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT-DROP
-  - AND,((NETWORK,UDP),(DST-PORT,853)),REJECT-DROP
   # --- block ---
   - RULE-SET,reject,REJECT-DROP
   # --- torrent → direct ---
@@ -158,23 +150,25 @@ rules:
   - RULE-SET,vpndetect,DIRECT
   # --- RU whitelist → direct (gov, banks, RU-only) — before refilter ---
   - RULE-SET,whitelist,DIRECT
-  # --- AI ---
+  # --- user overrides ---
+  - RULE-SET,ru-custom-direct,DIRECT
+  - RULE-SET,ru-custom-proxy,PROXY
+  # --- dedicated groups ---
+  - RULE-SET,youtube,📺 YouTube
+  - RULE-SET,discord,💬 Discord
+  - PROCESS-NAME-REGEX,discord|vesktop,💬 Discord
   - RULE-SET,ai,🤖 AI
   - PROCESS-NAME,com.openai.chat,🤖 AI
   - PROCESS-NAME,com.anthropic.claude,🤖 AI
-  # --- youtube ---
-  - RULE-SET,youtube,📺 YouTube
-  # --- discord ---
-  - RULE-SET,discord,💬 Discord
-  - PROCESS-NAME-REGEX,discord|vesktop,💬 Discord
-  # --- supercell → proxy (before games) ---
-  - RULE-SET,supercell,PROXY
+  - RULE-SET,crypto,💰 Crypto
+  # --- games (before proxy/direct) ---
+  - OR,((RULE-SET,games),(RULE-SET,proc-games)),🎮 Игры
+  # --- microsoft (before proxy/direct) ---
+  - RULE-SET,microsoft,🪟 Microsoft
   # --- rkn bypass (before direct!) ---
   - RULE-SET,refilter-d,PROXY
   - RULE-SET,refilter-community,PROXY
   - RULE-SET,proxy,PROXY
-  # --- games ---
-  - OR,((RULE-SET,games),(RULE-SET,proc-games)),🎮 Игры
   # --- direct services ---
   - RULE-SET,direct,DIRECT
   - RULE-SET,proc-ru,🏠 RU
