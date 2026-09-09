@@ -224,3 +224,33 @@ rules:
 
   # --- fallback: everything else → VPN ---
   - MATCH,VPN
+
+  dns:
+  listen: 0.0.0.0:53
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  # A fake IP handed to a captive-portal probe, an NTP client or a STUN lookup
+  # breaks it outright, so those never get one.
+  fake-ip-filter:
+    - rule-set:direct
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "captive.apple.com"
+    - "connectivitycheck.gstatic.com"
+    - "time.*.com"
+    - "time.*.gov"
+    - "+.pool.ntp.org"
+    - "+.stun.*"
+    - "stun.*"
+  default-nameserver: [1.1.1.1, 8.8.8.8]
+  proxy-server-nameserver: [1.1.1.1, 8.8.8.8]
+  direct-nameserver:
+    - https://common.dns.yandex.net/dns-query
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query#PROXY
