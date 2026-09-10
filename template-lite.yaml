@@ -1,0 +1,159 @@
+# ══════════════════════════════════════════════════════════════════
+#  Шаблон подписки MihoMo (Clash.Meta) для Remnawave
+#
+#  ВАРИАНТ: компьютер, облегчённый
+# ══════════════════════════════════════════════════════════════════
+#
+#  Всего вариантов четыре — выберите один:
+#
+#    template-mobile.yaml        телефон, облегчённый  (рекомендуется для iOS)
+#    template-mobile-full.yaml   телефон + реестр РКН
+#    template.yaml               компьютер + реестр РКН  (полный набор)
+#    template-lite.yaml          компьютер, облегчённый   ← этот файл
+#
+#  Чем этот вариант отличается:
+#    • то же, что template.yaml, но без реестра РКН и российских IP;
+#    • неизвестные домены в зоне .ru идут через VPN;
+#    • меньше памяти и трафика на обновление правил.
+#
+#  Группы: VPN · YouTube · Discord · AI · Games
+
+mixed-port: 7890
+mode: rule
+log-level: silent
+allow-lan: false
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+keep-alive-interval: 30
+find-process-mode: strict
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack: [any:53]
+  strict-route: true
+  route-exclude-address:
+    - 224.0.0.0/3
+    - 10.0.0.0/8
+    - 127.0.0.0/8
+    - 100.64.0.0/10
+    - 172.16.0.0/12
+    - 169.254.0.0/16
+    - 192.168.0.0/16
+    - fc00::/7
+    - fe80::/10
+
+
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  # A fake IP handed to a captive-portal probe, an NTP client or a STUN lookup
+  # breaks it outright, so those never get one.
+  fake-ip-filter:
+    - rule-set:direct
+    - "*.lan"
+    - "*.local"
+    - "*.localdomain"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "captive.apple.com"
+    - "connectivitycheck.gstatic.com"
+    - "time.*.com"
+    - "time.*.gov"
+    - "+.pool.ntp.org"
+    - "+.stun.*"
+    - "stun.*"
+  default-nameserver: [1.1.1.1, 8.8.8.8]
+  proxy-server-nameserver: [1.1.1.1, 8.8.8.8]
+  direct-nameserver:
+    - https://common.dns.yandex.net/dns-query
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query#PROXY
+
+
+sniffer:
+  enable: true
+  override-destination: false
+  parse-pure-ip: true
+  sniff:
+    HTTP: { ports: [80, 8080-8880] }
+    TLS:  { ports: [443, 8443] }
+    QUIC: { ports: [443] }
+  skip-dst-address:
+    - 224.0.0.0/3
+    - 10.0.0.0/8
+    - 127.0.0.0/8
+    - 100.64.0.0/10
+    - 172.16.0.0/12
+    - 198.18.0.0/15
+    - 169.254.0.0/16
+    - 192.168.0.0/16
+    - fc00::/7
+    - fe80::/10
+
+
+proxies: # LEAVE THIS LINE!
+
+proxy-groups:
+  - { name: 🚀 VPN, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png", type: select, url: "https://cp.cloudflare.com/generate_204", proxies: [⚡️ Авто, 📶 Резерв, 🏠 DIRECT] }
+  # LEAVE THIS LINE!
+  - { name: ▶️ YouTube, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🚀 VPN] }
+  - { name: 🎧 Discord, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🚀 VPN] }
+  - { name: 🧠 AI, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Dark/Bot.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🚀 VPN] }
+  - { name: 🕹️ Игры, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🏠 DIRECT, 🚀 VPN] }
+  # --- hidden ---
+  - { name: ⚡️ Авто, type: url-test, tolerance: 150, url: "https://cp.cloudflare.com/generate_204", interval: 300, lazy: true, hidden: true, remnawave: { include-proxies: false }, include-all: true }
+  - { name: 📶 Резерв, type: fallback, url: "https://cp.cloudflare.com/generate_204", interval: 300, lazy: true, hidden: true, remnawave: { include-proxies: false }, include-all: true }
+  - { name: PROXY, type: select, hidden: true, remnawave: { include-proxies: false }, proxies: [🚀 VPN] }
+  - { name: 🏠 DIRECT, type: select, hidden: true, remnawave: { include-proxies: false }, proxies: [DIRECT] }
+
+
+rule-providers:
+  reject:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.mrs", path: ./rs/reject.mrs }
+  proxy:        { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.mrs", path: ./rs/proxy.mrs }
+  discord:      { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/discord.mrs", path: ./rs/discord.mrs }
+  ai:           { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.mrs", path: ./rs/ai.mrs }
+  youtube:      { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.mrs", path: ./rs/youtube.mrs }
+  crypto:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/crypto.mrs", path: ./rs/crypto.mrs }
+  ip-check:     { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.mrs", path: ./rs/ip-check.mrs }
+  games:        { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.mrs", path: ./rs/games.mrs }
+  direct:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.mrs", path: ./rs/direct.mrs }
+  direct-ip:    { type: http, behavior: ipcidr, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ip.mrs", path: ./rs/direct-ip.mrs }
+  proc-games:   { type: http, behavior: classical, format: yaml, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-games.yaml", path: ./rs/proc-games.yaml }
+  proc-torrent: { type: http, behavior: classical, format: yaml, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-torrent.yaml", path: ./rs/proc-torrent.yaml }
+
+rules:
+  # --- local & system ---
+  - RULE-SET,direct-ip,DIRECT,no-resolve
+  - IP-CIDR,::/0,REJECT-DROP,no-resolve
+  # --- ads & telemetry ---
+  - RULE-SET,reject,REJECT-DROP
+  # --- proxied services ---
+  - RULE-SET,proxy,🚀 VPN
+  - RULE-SET,ai,🧠 AI
+  - RULE-SET,youtube,▶️ YouTube
+  - RULE-SET,discord,🎧 Discord
+  - RULE-SET,crypto,🚀 VPN
+  # --- IP-probe endpoints must report the real IP ---
+  # (after the proxied services: upstream lists gstatic.com here)
+  - RULE-SET,ip-check,DIRECT
+  # --- games & direct services ---
+  - RULE-SET,games,🕹️ Игры
+  - RULE-SET,direct,DIRECT
+  # --- process rules (desktop; evaluated only if nothing above matched) ---
+  - RULE-SET,proc-torrent,DIRECT
+  - RULE-SET,proc-games,🕹️ Игры
+  - PROCESS-NAME-REGEX,(?i)(claude|com\.openai\.chat),🧠 AI
+  - PROCESS-NAME-REGEX,(?i)(discord|vesktop),🎧 Discord
+  # --- everything else ---
+  - MATCH,🚀 VPN

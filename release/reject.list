@@ -1,5 +1,6 @@
 # reject — auto-generated, do not edit
-# entries: 1244
+# source: DigneZzZ/routing + custom.yaml
+# entries: 1228
 +.1l-hit.mail.ru
 +.1l-hit.vkplay.ru
 +.1oavsblobprodcus350.blob.core.windows.net
@@ -10,12 +11,11 @@
 +.51.la
 +.51y5.net
 +.7box.vip
-+.a.ads1.msn.com
 +.a.ads2.msn.com
 +.a.adtng.com
 +.a.alimama.cn
++.a.market.xiaomi.com
 +.a.mts.ru
-+.a.rad.msn.com
 +.a.youdao.com
 +.aaid.umeng.com
 +.aaxads.com
@@ -33,8 +33,10 @@
 +.ad.cctv.com
 +.ad.games.dmm.com
 +.ad.hpplay.cn
++.ad.intl.xiaomi.com
 +.ad.m.iqiyi.com
 +.ad.mail.ru
++.ad.mi.com
 +.ad.mobile.youku.com
 +.ad.ozone.ru
 +.ad.qq.com
@@ -45,6 +47,8 @@
 +.ad.us.sinaimg.cn
 +.ad.wang502.com
 +.ad.weixin.qq.com
++.ad.xiaomi.com
++.ad1.xiaomi.com
 +.ad4.mail.ru
 +.adash-c.m.taobao.com
 +.adash-c.ut.taobao.com
@@ -90,6 +94,7 @@
 +.admetrica.ru
 +.admob-cn.com
 +.admob.com
++.admob.xiaomi.com
 +.admusicpic.music.126.net
 +.adnet.qq.com
 +.adnet.sohu.com
@@ -137,7 +142,6 @@
 +.ads.yandex.ru
 +.ads.yango.com
 +.ads.youtube.com
-+.ads1.msads.net
 +.ads1.msn.com
 +.ads3-normal-hl.zijieapi.com
 +.ads3-normal.zijieapi.com
@@ -183,6 +187,8 @@
 +.adv.app.qq.com
 +.adv.ozon.ru
 +.adv.rustore.ru
++.adv.sec.intl.miui.com
++.adv.sec.miui.com
 +.adv.vk.com
 +.adv.vk.ru
 +.adv.yandex.com
@@ -199,6 +205,7 @@
 +.advertisercommunity.com
 +.advertiserscommunity.com
 +.advertising.adobe.com
++.advertising.apple.com
 +.advertserve.com
 +.adview.cn
 +.advk.vk.ru
@@ -220,7 +227,6 @@
 +.alog.umengcloud.com
 +.alogs.umeng.com
 +.alogus.umeng.com
-+.alpha.telemetry.microsoft.com
 +.alt-ad.mail.ru
 +.alt-r.my.com
 +.amazon-adsystem.com
@@ -242,6 +248,7 @@
 +.analytics.vk.ru
 +.analytics.vpc.duolingo.com
 +.analytics.wildberries.ru
++.api-adservices.apple.com
 +.api-eu.carrotquest.app
 +.api-eu.carrotquest.io
 +.api-js.mindbox.ru
@@ -294,13 +301,8 @@
 +.atm.youku.com
 +.atom-data.io
 +.atrace.chelaile.net.cn
-+.au-v10.events.data.microsoft.com
-+.au-v20.events.data.microsoft.com
-+.au.vortex-win.data.microsoft.com
 +.audid.umeng.com
 +.azwancan.trafficmanager.net
-+.b.ads1.msn.com
-+.b.rad.msn.com
 +.b2.mail.ru
 +.badjs.weixinbridge.com
 +.baichuan-sdk.alicdn.com
@@ -359,10 +361,11 @@
 +.bn4sch101123110.wns.windows.com
 +.bn4sch101123202.wns.windows.com
 +.bn4sch102110124.wns.windows.com
++.browser-intake-datadoghq.com
 +.browser.events.data.msn.cn
++.browser.events.data.msn.com
 +.browser.pipe.aria.microsoft.com
 +.bs.mail.ru
-+.bs.serving-sys.com
 +.bs.yandex.ru
 +.btrace.qq.com
 +.bugly.qq.com
@@ -374,7 +377,6 @@
 +.c.msn.com
 +.c.sayhi.360.cn
 +.c.uaa.iqiyi.com
-+.ca.telemetry.microsoft.com
 +.cache.datamart.windows.com
 +.casalemedia.com
 +.cb.baidu.com
@@ -510,11 +512,14 @@
 +.cnaa123.com
 +.cnlogs.umeng.com
 +.cnlogs.umengcloud.com
++.collector.github.com
 +.collector.xhamster.com
 +.compatexchange1.trafficmanager.net
 +.config.uca.cloud.unity3d.com
 +.contentabc.com
 +.contextual.media.net
++.copilot-telemetry-service.githubusercontent.com
++.copilot-telemetry.githubusercontent.com
 +.corp.sts.microsoft.com
 +.corpext.msitadfs.glbdns2.microsoft.com
 +.counter.yandex.ru
@@ -527,6 +532,7 @@
 +.crash2.zhihu.com
 +.crashlytics.163.com
 +.cretgate.com
++.cs1.wpc.v0cdn.net
 +.csjplatform.com
 +.cstm.baidu.com
 +.ctobsnssdk.com
@@ -536,6 +542,10 @@
 +.da.hunantv.com
 +.da.mgtv.com
 +.data.flurry.com
++.data.mistat.india.xiaomi.com
++.data.mistat.intl.xiaomi.com
++.data.mistat.rus.xiaomi.com
++.data.mistat.xiaomi.com
 +.datayi.cn
 +.db3aqu.atdmt.com
 +.db5-eap.settings-win.data.microsoft.com.akadns.net
@@ -543,14 +553,10 @@
 +.db5.settings.data.microsoft.com.akadns.net
 +.db5.vortex.data.microsoft.com.akadns.net
 +.dc.letv.com
-+.de-v20.events.data.microsoft.com
-+.de.vortex-win.data.microsoft.com
 +.decide.mixpanel.com
 +.demdex.net
-+.df.telemetry.microsoft.com
 +.diagnostics.support.microsoft.com
 +.dig.bdurl.net
-+.disney.my.sentry.io
 +.doubleclick-cn.net
 +.doubleclick.cn
 +.doubleclick.com
@@ -581,13 +587,7 @@
 +.ero-advertising.com
 +.eroadvertising.com
 +.error-tracking.megamarket.tech
-+.eu-v10.events.data.microsoft.com
-+.eu-v10c.events.data.microsoft.com
-+.eu-v20.events.data.microsoft.com
-+.eu-watsonc.events.data.microsoft.com
-+.eu.vortex-win.data.microsoft.com
 +.euads-o.api.leiniao.com
-+.events-sandbox.data.microsoft.com
 +.evt.mxplay.com
 +.exoclick.com
 +.exosrv.com
@@ -602,7 +602,6 @@
 +.fourier.taobao.com
 +.fout.jp
 +.fpb.sohu.com
-+.functional.events.data.microsoft.com
 +.g.163.com
 +.g.click.taobao.com
 +.g.mindbox.ru
@@ -645,6 +644,8 @@
 +.gozendata.com
 +.graph-fallback.instagram.com
 +.graph.instagram.com
++.graph.whatsapp.com
++.graph.whatsapp.net
 +.growin.cn
 +.growingio.cn
 +.growingio.com
@@ -747,11 +748,13 @@
 +.i-mobile.co.jp
 +.i.snssdk.com
 +.iabchina.cn
++.iad.apple.com
 +.iadmat.nosdn.127.net
 +.iadmatapk.nosdn.127.net
 +.iadmusicmat.music.126.net
 +.iadmusicmatvideo.music.126.net
 +.iads.unity3d.com
++.iadsdk.apple.com
 +.ieonlinews.microsoft.com
 +.ieonlinews.trafficmanager.net
 +.ifacelog.iqiyi.com
@@ -768,6 +771,7 @@
 +.informer.yandex.ru
 +.inner-active.mobi
 +.innovid.com
++.insideruser.trafficmanager.net
 +.insights-collector.gog.com
 +.inte.sogou.com
 +.inte.sogoucdn.com
@@ -781,8 +785,6 @@
 +.ja2.gamersky.com
 +.jads.co
 +.jl3.yjaxa.top
-+.jp-v10.events.data.microsoft.com
-+.jp-v20.events.data.microsoft.com
 +.js-agent.newrelic.com
 +.juicyads.com
 +.jzt.jd.com
@@ -821,13 +823,13 @@
 +.logs.ads.vungle.com
 +.logs.amap.com
 +.logs.chelaile.net.cn
++.logupdate.avlyun.sec.miui.com
 +.loyalnost-adv.ozon.ru
 +.lqc006.com
 +.lstat.youku.com
 +.lu.sogou.com
 +.lu.sogoucdn.com
 +.m-adash.m.taobao.com
-+.m.adnxs.com
 +.m.aty.sohu.com
 +.mail-ads.google.com
 +.marketing-info.wildberries.ru
@@ -856,6 +858,7 @@
 +.microad.jp
 +.microsoftads.com
 +.mipcache.bdstatic.com
++.misc.in.duokanbox.com
 +.mixer.sina.cn
 +.mlog.hiido.com
 +.moat.com
@@ -881,7 +884,6 @@
 +.msg.video.qiyi.com
 +.msg.youku.com
 +.msg2.video.qiyi.com
-+.msntest.serving-sys.com
 +.mtrace.qq.com
 +.mvad.com
 +.myadx.net
@@ -899,16 +901,14 @@
 +.nsclick.baidu.com
 +.nsclickvideo.baidu.com
 +.nw-umwatson.events.data.microsoft.com
-+.o4504926511693824.ingest.sentry.io
 +.obs.mts.ru
 +.oc.umeng.com
-+.oca.microsoft.com
-+.oca.telemetry.microsoft.com
 +.oca.telemetry.microsoft.us
 +.ogury.co
 +.ogury.com
 +.onecollector.cloudapp.aria.akadns.net
 +.onesignal.com
++.openai.qualtrics.com
 +.openx.net
 +.openxadexchange.com
 +.openxcdn.net
@@ -974,6 +974,7 @@
 +.qpb1.sohu.com
 +.qqdata.ab.qq.com
 +.questions-adv.ozon.ru
++.qwapi.com
 +.r.mail.ru
 +.r0.mail.ru
 +.r0.mradx.net
@@ -992,12 +993,12 @@
 +.report.ap.yandex-net.ru
 +.report.qqweb.qq.com
 +.report.tencentmusic.com
-+.reports.wes.df.telemetry.microsoft.com
 +.res.hunantv.com
 +.resolve.umeng.com
 +.retcode.taobao.com
 +.reyun.com
 +.rmonitor.qq.com
++.romeccs.microsoft.com
 +.rs.mail.ru
 +.rs.sinajs.cn
 +.rtlog3-applog-hl.fqnovel.com
@@ -1019,16 +1020,16 @@
 +.schemas.microsoft.akadns.net
 +.sclick.baidu.com
 +.sdkclick.mobile.sina.cn
-+.secure.adnxs.com
 +.secure.flashtalking.com
 +.segment.com
 +.segment.io
 +.segmenthub.com
 +.segmentify.com
-+.self.events.data.microsoft.com
 +.sensors.umetrip.com.cn
 +.sentry-cdn.com
 +.sentry-ng.g.smailru.net
++.sentry.d.mi.com
++.sentry.d.xiaomi.net
 +.sentry.dev
 +.sentry.dev-my.com
 +.sentry.dev-my.games
@@ -1045,7 +1046,6 @@
 +.sentry.viqeo.tv
 +.sentry.wb.ru
 +.sentry.x5.ru
-+.services.wes.df.telemetry.microsoft.com
 +.serving-sys.com
 +.settings-sandbox.data.microsoft.com
 +.settings-win-ppe.data.microsoft.com
@@ -1069,8 +1069,6 @@
 +.spynet2.microsoft.com
 +.spynetalt.microsoft.com
 +.spyneteurope.microsoft.akadns.net
-+.sqm.df.telemetry.microsoft.com
-+.sqm.telemetry.microsoft.com
 +.sqm.telemetry.microsoft.com.nsatc.net
 +.sr-client-cfg.amplitude.com
 +.sr-client-cfg.eu.amplitude.com
@@ -1089,13 +1087,13 @@
 +.stats.avito.ru
 +.stats.dahlmessenger.com
 +.stats.dev.telega.info
++.stats.music.xiaomi.com
 +.stats.rustore.ru
 +.stats.telega.info
 +.stats.vk-portal.net
 +.supersonic.com
 +.supersonicads-a.akamaihd.net
 +.supersonicads.com
-+.survey.watson.microsoft.com
 +.syh.zybang.com
 +.t.mail.ru
 +.taboola.com
@@ -1110,8 +1108,6 @@
 +.tdsdk.cpatrk.net
 +.tele.trafficmanager.net
 +.telecome.cn
-+.telecommand.telemetry.microsoft.com
-+.telecommandsvc.microsoft.com
 +.telemetry.appex.bing.net
 +.telemetry.microsoft.com
 +.telemetry.remoteapp.windowsazure.com
@@ -1120,6 +1116,7 @@
 +.test.activity.windows.com
 +.testads.api.my7v.com
 +.theta.sogoucdn.com
++.tjqonline.cn
 +.tm-banners.gamingadult.com
 +.tmead.y.qq.com
 +.tmeadcomm.y.qq.com
@@ -1134,8 +1131,11 @@
 +.track.lc.quark.cn
 +.track.sohu.com
 +.tracker-api.my.com
++.tracker.ai.xiaomi.com
 +.tracker.my.com
++.tracker.xiaomixiaoai.com
 +.tracking.mcdonalds.com.cn
++.tracking.miui.com
 +.trackingprd.hwwt8.com
 +.trackserver.shuxinyc.com
 +.trafficfactory.biz
@@ -1144,8 +1144,6 @@
 +.uberads.com
 +.ubmcvideo.baidustatic.com
 +.ugdtimg.com
-+.uk-v20.events.data.microsoft.com
-+.uk.vortex-win.data.microsoft.com
 +.uks.b.prd.ags.trafficmanager.net
 +.ulogs.umeng.com
 +.ulogs.umengcloud.com
@@ -1162,18 +1160,9 @@
 +.upapi.net
 +.uranus.sogou.com
 +.urchin.com
-+.us-v10.events.data.microsoft.com
-+.us-v10c.events.data.microsoft.com
-+.us-v20.events.data.microsoft.com
-+.us.vortex-win.data.microsoft.com
-+.us4-v20.events.data.microsoft.com
-+.us5-v20.events.data.microsoft.com
 +.utoken.umeng.com
 +.v10-win.vortex.data.microsoft.com.akadns.net
-+.v10.events.data.microsoft.com
 +.v10.vortex-win.data.microsoft.com
-+.v10c.events.data.microsoft.com
-+.v20.events.data.microsoft.com
 +.v20.vortex-win.data.microsoft.com
 +.v6-adashx.ut.amap.com
 +.v6-adashx.ut.cainiao.com
@@ -1191,15 +1180,10 @@
 +.wapwbclick.mobile.sina.cn
 +.watson.live.com
 +.watson.microsoft.com
-+.watson.ppe.telemetry.microsoft.com
-+.watson.telemetry.microsoft.com
-+.watsonc.events.data.microsoft.com
 +.wbclick.mobile.sina.cn
 +.web-analytics.wildberries.ru
-+.web.vortex.data.microsoft.com
 +.webvisor.com
 +.webvisor.org
-+.wes.df.telemetry.microsoft.com
 +.weus2watcab01.blob.core.windows.net
 +.weus2watcab02.blob.core.windows.net
 +.whiteline.mail.ru
@@ -1241,6 +1225,7 @@
 +.zhugeapi.com
 +.zhugeapi.net
 +.zhugeio.com
++.ztd.dds.microsoft.com
 +.zxid-api.mobileservice.cn
 +.zxid-m.mobileservice.cn
 +.zz.bdstatic.com

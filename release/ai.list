@@ -1,5 +1,6 @@
 # ai — auto-generated, do not edit
-# entries: 189
+# source: DigneZzZ/routing + custom.yaml
+# entries: 182
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -17,7 +18,6 @@
 +.anythingllm.com
 +.arena.ai
 +.bard.google.com
-+.browser-intake-datadoghq.com
 +.cerebras.ai
 +.character.ai
 +.chat.com
@@ -28,6 +28,7 @@
 +.cici.com
 +.ciciai.com
 +.ciciaicdn.com
++.civitai.com
 +.clau.de
 +.claude.ai
 +.claude.com
@@ -47,15 +48,10 @@
 +.comfy.org
 +.comfyci.org
 +.comfyregistry.org
-+.copilot-proxy.githubusercontent.com
 +.copilot-stg.com
-+.copilot-telemetry-service.githubusercontent.com
-+.copilot-telemetry.githubusercontent.com
-+.copilot-workspace.githubnext.com
 +.copilot.cloud.microsoft
 +.copilot.com
 +.copilot.microsoft.com
-+.copilotprodattachments.blob.core.windows.net
 +.coze.com
 +.crewai.com
 +.crixet.com
@@ -64,6 +60,7 @@
 +.cursor.sh
 +.cursorapi.com
 +.daily-cloudcode-pa.googleapis.com
++.deepl.com
 +.deepmind.com
 +.deepmind.google
 +.deepwiki.com
@@ -88,7 +85,7 @@
 +.gemini.gstatic.com
 +.generativeai.google
 +.generativelanguage.googleapis.com
-+.githubcopilot.com
++.grammarly.com
 +.grazie.ai
 +.grazie.aws.intellij.net
 +.grok.com
@@ -100,8 +97,6 @@
 +.hf.space
 +.host.livekit.cloud
 +.huggingface.co
-+.intercom.io
-+.intercomcdn.com
 +.jasper.ai
 +.jetbrains.ai
 +.jules.google
@@ -111,10 +106,12 @@
 +.labs.google
 +.labs.google.com
 +.langchain.com
++.leonardo.ai
 +.liveperson.net
 +.lmstudio.ai
 +.lovart.ai
 +.lpsnmedia.net
++.luma.ai
 +.makersuite.google.com
 +.manus.im
 +.manuscdn.com
@@ -131,8 +128,8 @@
 +.notebooklm.google.com
 +.notebooklm.googleapis.com
 +.notegpt.io
++.notion.so
 +.novelai.net
-+.o33249.ingest.sentry.io
 +.oaistatic.com
 +.oaistatsig.com
 +.oaiusercontent.com
@@ -141,7 +138,6 @@
 +.opal.google.com
 +.openai.com
 +.openai.com.cdn.cloudflare.net
-+.openai.qualtrics.com
 +.openaiapi-site.azureedge.net
 +.openaiassets.blob.core.windows.net
 +.openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
@@ -165,7 +161,7 @@
 +.qoder.com
 +.replicate.com
 +.robinfrontend-pa.googleapis.com
-+.sentry.io
++.runway.ml
 +.servd-anthropic-website.b-cdn.net
 +.sider.ai
 +.sora.com
@@ -176,6 +172,7 @@
 +.tapnow.ai
 +.themeforest.net
 +.together.ai
++.topaz.io
 +.trae.ai
 +.tripo3d.ai
 +.turn.livekit.cloud
@@ -183,9 +180,6 @@
 +.windsurf.build
 +.windsurf.com
 +.x.ai
-+.you.com
 +.youmind.ai
 +.youmind.com
 +.youmind.site
-ai.google.dev
-browser-intake-datadoghq.com

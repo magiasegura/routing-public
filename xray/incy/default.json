@@ -1,0 +1,43 @@
+{
+  "Name": "IDTBX (lite)",
+  "GlobalProxy": "true",
+  "UseChunkFiles": "false",
+  "RemoteDns": "8.8.8.8",
+  "DomesticDns": "77.88.8.8",
+  "RemoteDNSType": "DoH",
+  "RemoteDNSDomain": "https://8.8.8.8/dns-query",
+  "RemoteDNSIP": "8.8.8.8",
+  "DomesticDNSType": "DoH",
+  "DomesticDNSDomain": "https://77.88.8.8/dns-query",
+  "DomesticDNSIP": "77.88.8.8",
+  "LastUpdated": "1789031112",
+  "DnsHosts": {},
+  "RouteOrder": "block-proxy-direct",
+  "DirectSites": [
+    "geosite:ip-check",
+    "geosite:vpndetect",
+    "geosite:direct"
+  ],
+  "DirectIp": [
+    "geoip:direct-ip"
+  ],
+  "BlockSites": [
+    "geosite:reject"
+  ],
+  "BlockIp": [],
+  "DomainStrategy": "IPIfNonMatch",
+  "FakeDNS": "false",
+  "Geoipurl": "https://raw.githubusercontent.com/magiasegura/routing-public/main/xray/happ/geoip.dat",
+  "Geositeurl": "https://raw.githubusercontent.com/magiasegura/routing-public/main/xray/happ/geosite.dat",
+  "ProxySites": [
+    "geosite:youtube",
+    "geosite:discord",
+    "geosite:ai",
+    "geosite:crypto",
+    "geosite:games",
+    "geosite:proxy"
+  ],
+  "ProxyIp": [
+    "geoip:proxy-ip"
+  ]
+}
