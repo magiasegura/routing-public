@@ -1,6 +1,6 @@
 # proxy — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 145
+# entries: 156
 +.4pda.to
 +.ads.twitch.tv
 +.alfahost.io
@@ -10,7 +10,12 @@
 +.atom.io
 +.autodesk.com
 +.betterstack.com
++.cdn-service.space
 +.cdn-telegram.org
++.cdn2site.com
++.cdn32.lol
++.cdn32.online
++.cdntogo.net
 +.coinify.com
 +.comments.app
 +.contest.com
@@ -57,6 +62,8 @@
 +.kara.su
 +.kemono.su
 +.kino.pub
++.kino.watch
++.kinopub.online
 +.kinozal.guru
 +.kinozal.tv
 +.lib.social
@@ -65,6 +72,8 @@
 +.lostfilm.uno
 +.mediazona.ca
 +.meduza.io
++.mos-gorsud.co
++.mos-gorsud.site
 +.moscowtimes.ru
 +.myoctocat.com
 +.namecheap.com
@@ -100,6 +109,7 @@
 +.productionresultssa8.blob.core.windows.net
 +.productionresultssa9.blob.core.windows.net
 +.proekt.media
++.pushbr.com
 +.quiz.directory
 +.qwant.com
 +.repo.new
@@ -144,5 +154,6 @@
 +.whatsapp.org
 +.whatsapp.tv
 +.whatsappbrand.com
++.zencdn.net
 +.zona.media
 +.zx-pk.ru

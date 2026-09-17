@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3201
+# entries: 3226
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -581,6 +581,7 @@
 +.auto.ru
 +.autoru.me
 +.aviasales.com
++.aviasales.ru
 +.avito.ru
 +.avito.st
 +.avs.io
@@ -969,7 +970,6 @@
 +.bethesdagamestudios.com
 +.bethsoft.com
 +.biitii.com
-+.bilet.nspk.ru
 +.binads.com
 +.bing.com
 +.bing.com.cn
@@ -999,6 +999,7 @@
 +.boswp.com
 +.botframework.com
 +.botmechanic.io
++.boxberry.ru
 +.bps-sberbank.by
 +.braeburncapital.com
 +.brandeasygo.com
@@ -1135,6 +1136,7 @@
 +.cian.site
 +.ciattackers.com
 +.ciciq.net
++.citilink.ru
 +.cl1-cdn.origin-apple.com.akadns.net
 +.cl2-cdn.origin-apple.com.akadns.net
 +.cl2.apple.com.edgekey.net.globalredir.akadns.net
@@ -1257,6 +1259,7 @@
 +.discussionsapple.com
 +.dkbeatsbydre.com
 +.dl-iphone.com
++.dns-shop.ru
 +.docs.com
 +.dodois.com
 +.dodois.io
@@ -1346,6 +1349,7 @@
 +.dykkng5hnh52u.cloudfront.net
 +.dynamics.cn
 +.dynamics.com
++.dzen.ru
 +.eadaily.com
 +.eadaily.info
 +.eadaily.net
@@ -1449,6 +1453,7 @@
 +.gazetarussa.com.br
 +.gazprombank.com
 +.gazprombank.investments
++.gazprombank.ru
 +.gears5.com
 +.gearspop.com
 +.gearstactics.com
@@ -1470,6 +1475,7 @@
 +.gismeteo.by
 +.gismeteo.com
 +.gismeteo.net
++.gismeteo.ru
 +.gismeteo.st
 +.gmnetworks.net
 +.gobeatsye.com
@@ -1481,6 +1487,7 @@
 +.gorzdrav.org
 +.gotcosmos.com
 +.goup.ai
++.gov.ru
 +.gramotei.online
 +.graphengine.io
 +.green-box-tv.com
@@ -1838,6 +1845,7 @@
 +.itunesu.com
 +.itunesu.net
 +.iutunes.com
++.ivi.ru
 +.ivicdn.tv
 +.iwork.com
 +.iwork.se
@@ -1922,6 +1930,7 @@
 +.ktech.team
 +.kumo.com
 +.l-msedge.net
++.lamoda.ru
 +.latampartneruniversity.com
 +.latticedata.com
 +.launchpad.wang
@@ -2026,6 +2035,7 @@
 +.meetyourdevices.com
 +.megafon.com
 +.megafon.ru
++.megamarket.ru
 +.megamarket.tech
 +.mel.fm
 +.memealerts.com
@@ -2167,7 +2177,9 @@
 +.minecraftshop.com
 +.mirabilis.com
 +.mirandaicq.com
++.mironline.ru
 +.miwifi.com
++.mkb.ru
 +.mmdnn.com
 +.mmonsterheadphones.net
 +.mncmsidlab1.cn
@@ -2301,6 +2313,7 @@
 +.mts.ru
 +.musickit.net
 +.mvideo.edna.io
++.mvideo.ru
 +.mvk.com
 +.mwf-service.akamaized.net
 +.my-manager-account.com
@@ -2321,7 +2334,6 @@
 +.mytopf.com
 +.mytrk.link
 +.mzstatic.com
-+.nalog.gov.ru
 +.namemybeats.com
 +.naydex.net
 +.neborder.com
@@ -2350,6 +2362,7 @@
 +.notary-submissions-prod.s3.us-west-2.amazonaws.com
 +.noticias-rt.com
 +.notimundo.press
++.nspk.ru
 +.nuget.org
 +.nugettest.org
 +.nxta.org
@@ -2404,6 +2417,7 @@
 +.onmschina.cn
 +.onsalekey.com
 +.onsaletrend.com
++.open.ru
 +.opennet.dev
 +.opentranslatorstothings.org
 +.opticsforthecloud.net
@@ -2518,8 +2532,10 @@
 +.playfab.com
 +.playfabapi.com
 +.plex.direct
++.pobeda.aero
 +.pobeda.page
 +.pochta.ru
++.pochtabank.ru
 +.pocketbiketrader.com
 +.podorozhnik.spb.ru
 +.polza.ai
@@ -2548,6 +2564,7 @@
 +.promodj.com
 +.promonsterbeatsbydre.com
 +.prostudiobeatscybersale.com
++.psbank.ru
 +.ptsecurity.com
 +.public.express
 +.pullstring.net
@@ -2602,6 +2619,7 @@
 +.router.asus.com
 +.router.ctc
 +.routerlogin.com
++.rshb.ru
 +.rt-school.online
 +.rt.com
 +.rt.rs
@@ -2676,6 +2694,7 @@
 +.s-msedge.net
 +.s-msft.com
 +.s-msn.com
++.s7.ru
 +.saas-support.com
 +.safeliner.tech
 +.sage-observability.tech
@@ -2695,6 +2714,7 @@
 +.sberbank.ru
 +.sbercloud.tech
 +.sberpro.vedomosti.ru
++.sbrf.ru
 +.scnshop.cc
 +.seclab.lat
 +.selcdn.net
@@ -2750,6 +2770,7 @@
 +.smailru.net
 +.smartmed.pro
 +.smotreshka.tv
++.smotrim.ru
 +.sn-esp.site
 +.sneaker666.com
 +.sneakerpage.net
@@ -2762,6 +2783,7 @@
 +.sovcloud-static.cn
 +.sovcloud-usercontent.cn
 +.sovcloud.cn
++.sovcombank.ru
 +.spasibo.digital
 +.spasibo.market
 +.specialtyheadphones.com
@@ -3062,6 +3084,7 @@
 +.winhec.com
 +.winhec.net
 +.wink.am
++.wink.ru
 +.worldcoinpay.com
 +.worldcuprussia.com
 +.wpewebkit.org
@@ -3196,6 +3219,8 @@
 +.yastatic.net
 +.yclients.com
 +.yndx.net
++.yoomoney.ru
++.yota.ru
 +.youla.io
 +.yourgood.app
 +.yourmonsterbeats.com
