@@ -66,10 +66,10 @@ Base rule-set content is sourced from [DigneZzZ/routing](https://github.com/Dign
 
 | File | Link |
 |---|---|
-| geosite.dat (full) | [geosite.dat](https://raw.githubusercontent.com/magiasegura/routing-public/main/xray/geosite.dat) |
-| geoip.dat (full) | [geoip.dat](https://raw.githubusercontent.com/magiasegura/routing-public/main/xray/geoip.dat) |
-| geosite.dat (lite) | [happ/geosite.dat](https://raw.githubusercontent.com/magiasegura/routing-public/main/xray/happ/geosite.dat) |
-| geoip.dat (lite) | [happ/geoip.dat](https://raw.githubusercontent.com/magiasegura/routing-public/main/xray/happ/geoip.dat) |
+| geosite.dat (full) | [geosite.dat](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/xray/geosite.dat) |
+| geoip.dat (full) | [geoip.dat](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/xray/geoip.dat) |
+| geosite.dat (lite) | [happ/geosite.dat](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/xray/happ/geosite.dat) |
+| geoip.dat (lite) | [happ/geoip.dat](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/xray/happ/geoip.dat) |
 
 </details>
 
