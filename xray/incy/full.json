@@ -10,7 +10,7 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1790835632",
+  "LastUpdated": "1790836335",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
@@ -19,7 +19,8 @@
     "geosite:direct"
   ],
   "DirectIp": [
-    "geoip:direct-ip"
+    "geoip:direct-ip",
+    "geoip:ru"
   ],
   "BlockSites": [
     "geosite:reject"

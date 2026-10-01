@@ -11,6 +11,8 @@ Base rule-set content is sourced from [DigneZzZ/routing](https://github.com/Dign
 |---|---|
 | proxy | [proxy.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.list) |
 | direct | [direct.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.list) |
+| direct-core | [direct-core.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-core.list) |
+| direct-ios | [direct-ios.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ios.list) |
 | reject | [reject.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.list) |
 | youtube | [youtube.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.list) |
 | ai | [ai.list](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.list) |
@@ -39,6 +41,8 @@ Base rule-set content is sourced from [DigneZzZ/routing](https://github.com/Dign
 |---|---|
 | proxy | [proxy.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.mrs) |
 | direct | [direct.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.mrs) |
+| direct-core | [direct-core.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-core.mrs) |
+| direct-ios | [direct-ios.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ios.mrs) |
 | reject | [reject.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.mrs) |
 | youtube | [youtube.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.mrs) |
 | ai | [ai.mrs](https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.mrs) |
