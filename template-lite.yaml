@@ -119,18 +119,18 @@ proxy-groups:
 
 
 rule-providers:
-  reject:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/reject.mrs", path: ./rs/reject.mrs }
-  proxy:        { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proxy.mrs", path: ./rs/proxy.mrs }
-  discord:      { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/discord.mrs", path: ./rs/discord.mrs }
-  ai:           { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ai.mrs", path: ./rs/ai.mrs }
-  youtube:      { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/youtube.mrs", path: ./rs/youtube.mrs }
-  crypto:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/crypto.mrs", path: ./rs/crypto.mrs }
-  ip-check:     { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/ip-check.mrs", path: ./rs/ip-check.mrs }
-  games:        { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/games.mrs", path: ./rs/games.mrs }
-  direct:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct.mrs", path: ./rs/direct.mrs }
-  direct-ip:    { type: http, behavior: ipcidr, format: mrs, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/direct-ip.mrs", path: ./rs/direct-ip.mrs }
-  proc-games:   { type: http, behavior: classical, format: yaml, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-games.yaml", path: ./rs/proc-games.yaml }
-  proc-torrent: { type: http, behavior: classical, format: yaml, interval: 86400, url: "https://raw.githubusercontent.com/magiasegura/routing-public/main/release/proc-torrent.yaml", path: ./rs/proc-torrent.yaml }
+  reject:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/reject.mrs", path: ./rs/reject.mrs }
+  proxy:        { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/proxy.mrs", path: ./rs/proxy.mrs }
+  discord:      { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/discord.mrs", path: ./rs/discord.mrs }
+  ai:           { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/ai.mrs", path: ./rs/ai.mrs }
+  youtube:      { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/youtube.mrs", path: ./rs/youtube.mrs }
+  crypto:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/crypto.mrs", path: ./rs/crypto.mrs }
+  ip-check:     { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/ip-check.mrs", path: ./rs/ip-check.mrs }
+  games:        { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/games.mrs", path: ./rs/games.mrs }
+  direct:       { type: http, behavior: domain, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct.mrs", path: ./rs/direct.mrs }
+  direct-ip:    { type: http, behavior: ipcidr, format: mrs, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct-ip.mrs", path: ./rs/direct-ip.mrs }
+  proc-games:   { type: http, behavior: classical, format: yaml, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/proc-games.yaml", path: ./rs/proc-games.yaml }
+  proc-torrent: { type: http, behavior: classical, format: yaml, interval: 86400, url: "https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/proc-torrent.yaml", path: ./rs/proc-torrent.yaml }
 
 rules:
   # --- local & system ---
