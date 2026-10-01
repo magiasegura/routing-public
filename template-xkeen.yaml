@@ -78,6 +78,7 @@ proxy-groups:
   - { name: 🎧 Discord, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🚀 VPN] }
   - { name: 🧠 AI, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Dark/Bot.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🚀 VPN] }
   - { name: 🕹️ Игры, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🏠 DIRECT, 🚀 VPN] }
+  - { name: 🪟 Microsoft, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png", type: select, remnawave: { include-proxies: false }, include-all: true, proxies: [🚀 VPN, 🏠 DIRECT] }
   # --- hidden ---
   - { name: PROXY, type: select, hidden: true, remnawave: { include-proxies: false }, proxies: [🚀 VPN] }
   - { name: 🏠 DIRECT, type: select, hidden: true, remnawave: { include-proxies: false }, proxies: [DIRECT] }
@@ -111,7 +112,7 @@ rules:
   - RULE-SET,youtube,▶️ YouTube
   - RULE-SET,discord,🎧 Discord
   - RULE-SET,crypto,🚀 VPN
-  - RULE-SET,microsoft,🚀 VPN   # above `direct`, which also lists Microsoft
+  - RULE-SET,microsoft,🪟 Microsoft   # above `direct`, which also lists Microsoft
   # --- IP-probe endpoints must report the real IP ---
   # (after the proxied services: upstream lists gstatic.com here)
   - RULE-SET,ip-check,DIRECT
