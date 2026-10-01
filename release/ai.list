@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 182
+# entries: 190
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -78,11 +78,14 @@
 +.envato.com
 +.envatousercontent.com
 +.flow.google
++.flow.google.com
 +.gateway.ai.cloudflare.com
 +.geller-pa.googleapis.com
 +.gemini.google
 +.gemini.google.com
 +.gemini.gstatic.com
++.geminiweb-pa.clients.google.com
++.geminiweb-pa.clients6.google.com
 +.generativeai.google
 +.generativelanguage.googleapis.com
 +.grammarly.com
@@ -105,6 +108,7 @@
 +.kiro.dev
 +.labs.google
 +.labs.google.com
++.labstailwind.pa.googleapis.com
 +.langchain.com
 +.leonardo.ai
 +.liveperson.net
@@ -117,11 +121,14 @@
 +.manuscdn.com
 +.marscode.com
 +.meta.ai
++.metaaivm.com
 +.midjourney.com
 +.minimax.io
 +.mistral.ai
 +.moonshot.ai
 +.mozilla.ai
++.muse.ai
++.notebook.google
 +.notebook.google.com
 +.notebooklm-pa.googleapis.com
 +.notebooklm.google
@@ -145,6 +152,7 @@
 +.openaicomproductionae4b.blob.core.windows.net
 +.openart.ai
 +.openclaw.ai
++.opencode.ai
 +.openrouter.ai
 +.openspec.dev
 +.oystermercury.top
