@@ -13,6 +13,7 @@ Base rule-set content is sourced from [DigneZzZ/routing](https://github.com/Dign
 | direct | [direct.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct.list) |
 | direct-core | [direct-core.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct-core.list) |
 | direct-ios | [direct-ios.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct-ios.list) |
+| microsoft | [microsoft.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/microsoft.list) |
 | reject | [reject.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/reject.list) |
 | youtube | [youtube.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/youtube.list) |
 | ai | [ai.list](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/ai.list) |
@@ -43,6 +44,7 @@ Base rule-set content is sourced from [DigneZzZ/routing](https://github.com/Dign
 | direct | [direct.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct.mrs) |
 | direct-core | [direct-core.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct-core.mrs) |
 | direct-ios | [direct-ios.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/direct-ios.mrs) |
+| microsoft | [microsoft.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/microsoft.mrs) |
 | reject | [reject.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/reject.mrs) |
 | youtube | [youtube.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/youtube.mrs) |
 | ai | [ai.mrs](https://cdn.jsdelivr.net/gh/magiasegura/routing-public@main/release/ai.mrs) |
