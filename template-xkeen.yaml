@@ -1,11 +1,11 @@
-port: 7890
-socks-port: 7891
 redir-port: 7892
 tproxy-port: 7893
 allow-lan: true
+routing-mark: 255
 mode: rule
 log-level: silent
 ipv6: false
+find-process-mode: off
 unified-delay: true
 tcp-concurrent: true
 client-fingerprint: firefox
@@ -70,7 +70,7 @@ proxy-providers:
         - "XKeen 2.0"
       x-device-model:
         - "<MODEL_NAME>"
-        
+
 proxy-groups:
   - { name: 🚀 VPN, icon: "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png", type: select, url: "https://cp.cloudflare.com/generate_204", include-all: true }
 
@@ -138,7 +138,7 @@ rules:
   - RULE-SET,ru-ip,DIRECT,no-resolve
   # --- everything else ---
   - MATCH,🚀 VPN
-  
+
 dns:
   listen: 0.0.0.0:53
   enable: true
@@ -165,4 +165,4 @@ dns:
     - https://common.dns.yandex.net/dns-query
   nameserver:
     - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query#PROXY  
+    - https://8.8.8.8/dns-query#PROXY
