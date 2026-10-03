@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 190
+# entries: 191
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -32,6 +32,7 @@
 +.clau.de
 +.claude.ai
 +.claude.com
++.claude.dev
 +.claudemcpclient.com
 +.claudemcpcontent.com
 +.claudeusercontent.com
