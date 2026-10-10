@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3227
+# entries: 3207
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -89,20 +89,8 @@
 +.2beatsdre.com
 +.2buybeatsbydre.com
 +.2drdrebeats.com
-+.2gis.ae
-+.2gis.am
-+.2gis.az
-+.2gis.by
 +.2gis.com
-+.2gis.com.cy
-+.2gis.cz
-+.2gis.ge
-+.2gis.kg
-+.2gis.kz
 +.2gis.ru
-+.2gis.tech
-+.2gis.tj
-+.2gis.uz
 +.30.172.in-addr.arpa
 +.31.172.in-addr.arpa
 +.3ebra.net
@@ -162,7 +150,6 @@
 +.aaplimg.com
 +.abcheadphones.com
 +.abeatsbydrdre.com
-+.accesspoint.uz
 +.acmvid.com
 +.actualidad-rt.com
 +.adaptivecards.io
@@ -1145,7 +1132,6 @@
 +.cl5-cdn.origin-apple.com.akadns.net
 +.cloudapp.net
 +.cloudappsecurity.com
-+.cloudru.cn
 +.clstorage.net
 +.cm.expert
 +.cmhalq.com
@@ -1354,7 +1340,6 @@
 +.eadaily.info
 +.eadaily.net
 +.eadaily.org
-+.eaptechka.online
 +.earphonescheapest.com
 +.earpod.net
 +.ebookforipad.com
@@ -1372,6 +1357,7 @@
 +.emac.in
 +.emagic.de
 +.emias.info
++.energotransbank.com
 +.engkoo.com
 +.envybox.company
 +.envybox.family
@@ -1465,7 +1451,6 @@
 +.geoport.com
 +.gerwin.io
 +.getdrebeatssale.com
-+.getsynapse.io
 +.gfx.ms
 +.gib-global.com
 +.gib.sg
@@ -1536,6 +1521,7 @@
 +.hiwifi.com
 +.hololens.com
 +.home.arpa
++.home.bank
 +.homepod.cn
 +.honawalaan.com
 +.hopstop.tv
@@ -1861,18 +1847,6 @@
 +.jetfuelapp.com
 +.jetfuelapps.com
 +.jinrieluosi.cn
-+.jivo.chat
-+.jivochat.co.in
-+.jivochat.co.za
-+.jivochat.com
-+.jivochat.com.br
-+.jivochat.com.co
-+.jivochat.com.pe
-+.jivochat.com.tr
-+.jivochat.de
-+.jivochat.es
-+.jivochat.ng
-+.jivosite.com
 +.jkbeats.com
 +.jtvnw.net
 +.jump.taxi
@@ -1925,7 +1899,7 @@
 +.kontur-inc.com
 +.kontur.host
 +.kopfhorergunstigshop.com
-+.korona.com
++.koronapay.com
 +.koshelek.app
 +.ktech.team
 +.kumo.com
@@ -2021,6 +1995,7 @@
 +.management-azure-devices-provisioning.cn
 +.management-azure-devices.cn
 +.management-azure-devices.net
++.maritimebank.com
 +.masalladeloslimites.com
 +.max.ru
 +.mbeats-tech.com
@@ -2036,7 +2011,6 @@
 +.megafon.com
 +.megafon.ru
 +.megamarket.ru
-+.megamarket.tech
 +.mel.fm
 +.memealerts.com
 +.mepn.com
@@ -2556,6 +2530,7 @@
 +.powershellgallery.com
 +.premier.one
 +.premiumlive.site
++.priovtb.com
 +.prod-my.games
 +.prod-support.apple-support.akadns.net
 +.prodcontest.com
@@ -2565,6 +2540,7 @@
 +.promonsterbeatsbydre.com
 +.prostudiobeatscybersale.com
 +.psbank.ru
++.pskb.com
 +.ptsecurity.com
 +.public.express
 +.pullstring.net
@@ -2706,14 +2682,9 @@
 +.sanvaras.com
 +.sayeasy.eu
 +.sber-bank.by
-+.sber.pro
 +.sber.ru
-+.sberauto.com
-+.sberbank-tele.com
 +.sberbank.com
 +.sberbank.ru
-+.sbercloud.tech
-+.sberpro.vedomosti.ru
 +.sbrf.ru
 +.scnshop.cc
 +.seclab.lat
@@ -2741,6 +2712,7 @@
 +.sharepointonline.com
 +.shazam.com
 +.shedevrum.ai
++.shedevrum.com
 +.shoers.com
 +.shoestop2.com
 +.shop-headphones.net
@@ -3025,6 +2997,7 @@
 +.vscodeedu.com
 +.vsmarketplacebadge.apphb.com
 +.vtb-direct.com
++.vtb.com
 +.vtb.ru
 +.vtbglobalperspectives.com
 +.warehouse.domains
@@ -3159,8 +3132,11 @@
 +.xn--ruq8a011kt6y.xn--hxt814e
 +.ya.cc
 +.ya.ru
++.yadi.sk
 +.yammer.com
++.yandex-ad.cn
 +.yandex-bank.net
++.yandex-team.com
 +.yandex.aero
 +.yandex.asia
 +.yandex.az
@@ -3183,22 +3159,27 @@
 +.yandex.kz
 +.yandex.lt
 +.yandex.lv
++.yandex.market
 +.yandex.md
 +.yandex.mobi
 +.yandex.net
 +.yandex.org
 +.yandex.pl
++.yandex.pro
 +.yandex.ru
 +.yandex.st
 +.yandex.sx
++.yandex.taxi
 +.yandex.tj
 +.yandex.tm
 +.yandex.tr
++.yandex.travel
 +.yandex.ua
 +.yandex.uz
 +.yandexadexchange.net
 +.yandexcloud.net
 +.yandexcom.net
++.yandexdataschool.com
 +.yandexgo.com
 +.yandexwebcache.net
 +.yandexwebcache.org
@@ -3219,6 +3200,7 @@
 +.yastat.net
 +.yastatic.net
 +.yclients.com
++.ydb.tech
 +.yndx.net
 +.yoomoney.ru
 +.yota.ru
@@ -3226,5 +3208,3 @@
 +.yourgood.app
 +.yourmonsterbeats.com
 +.zte.home
-+.zvuk-b2b.com
-+.zvuk.com

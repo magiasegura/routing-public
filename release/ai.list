@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 191
+# entries: 192
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -177,6 +177,7 @@
 +.spicywriter.com
 +.stability.ai
 +.stitch.withgoogle.com
++.syntx.ai
 +.talkai.info
 +.tapnow.ai
 +.themeforest.net
