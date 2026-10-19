@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3255
+# entries: 3253
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -562,7 +562,6 @@
 +.arteldoc.com
 +.arteldoc.tv
 +.asiangooglenetwork.com
-+.asobostudio.com
 +.asp.net
 +.aspnetcdn.com
 +.asto.re
@@ -1424,7 +1423,6 @@
 +.firewire.cl
 +.firewire.eu
 +.fix-price.com
-+.flightsimulator.com
 +.flipwithsurface.com
 +.flocktory.com
 +.flomni.com
