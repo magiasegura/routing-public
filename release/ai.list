@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 196
+# entries: 206
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -10,17 +10,21 @@
 +.aistudio.google.com
 +.alkalicore-pa.clients6.google.com
 +.alkalimakersuite-pa.clients6.google.com
++.ant.dev
 +.anthropic.com
++.anthropic.team
 +.antigravity-pa.googleapis.com
 +.antigravity-unleash.goog
 +.antigravity.google
 +.antigravity.googleapis.com
++.antspace.dev
 +.anythingllm.com
 +.arena.ai
 +.bard.google.com
 +.cerebras.ai
 +.character.ai
 +.chat.com
++.chatbotclaude.com
 +.chatgpt.com
 +.chatgpt.livekit.cloud
 +.chatgpt.site
@@ -31,10 +35,16 @@
 +.civitai.com
 +.clau.de
 +.claude.ai
++.claude.app
 +.claude.com
 +.claude.dev
++.claude.new
++.claude.site
++.claudeacademy.com
 +.claudemcpclient.com
 +.claudemcpcontent.com
++.claudepages.dev
++.claudestudio.com
 +.claudeusercontent.com
 +.clawhub.ai
 +.clipdrop.co

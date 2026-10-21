@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3270
+# entries: 3276
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -582,8 +582,10 @@
 +.autoru.me
 +.aviasales.com
 +.aviasales.ru
++.avito.com
 +.avito.ru
 +.avito.st
++.avito.tech
 +.avs.io
 +.axm-usercontent-apple.com
 +.azchcdna.com
@@ -1539,6 +1541,7 @@
 +.headphonezip.com
 +.headset987.com
 +.hebiphone.com
++.hellodoc.app
 +.hellokittybeats.com
 +.hf-iphone.com
 +.hh.by
@@ -2053,6 +2056,7 @@
 +.mcchcdn.com
 +.mcs.st
 +.me.com
++.medrocket.me
 +.medsi.com
 +.medsi.pro
 +.meetfasttrack.com
@@ -2891,6 +2895,8 @@
 +.telega.me
 +.tellmewhygame.com
 +.tendawifi.com
++.terratraf.com
++.terratraf.io
 +.texture.com
 +.tfsallin.net
 +.the-monster-beats.com
