@@ -1,6 +1,6 @@
 # microsoft — auto-generated, do not edit
 # source: MetaCubeX geosite:microsoft + custom.yaml
-# entries: 744
+# entries: 751
 +.1drv.com
 +.21vbc.com
 +.21vbluecloud.com
@@ -196,6 +196,9 @@
 +.crmdynint.com
 +.crossborderexpansion.com
 +.ctldl.windowsupdate.com
++.data.microsoft.com
++.dc.applicationinsights.azure.com
++.dc.services.visualstudio.com
 +.dcg.microsoft.com
 +.default.exp-tas.com
 +.dependabot.com
@@ -284,6 +287,7 @@
 +.imaginecup.pl
 +.img-prod-cms-rt-microsoft-com.akamaized.net
 +.img-s-msn-com.akamaized.net
++.in.applicationinsights.azure.com
 +.ingads.com
 +.insiderdevtour.com
 +.internetexplorer.co
@@ -299,6 +303,7 @@
 +.latampartneruniversity.com
 +.lex.download.prss.microsoft.com
 +.lexuat.download.prss.microsoft.com
++.live.applicationinsights.azure.com
 +.live.com
 +.live.com.au
 +.live.eu
@@ -608,6 +613,7 @@
 +.repo.new
 +.rink.hockeyapp.net
 +.rsm.download.prss.microsoft.com
++.rt.services.visualstudio.com
 +.s-dc-msedge.net
 +.s-microsoft.com
 +.s-msedge.net
@@ -660,6 +666,7 @@
 +.t-msedge.net
 +.tailwindtraders.com
 +.techhub.ms
++.telemetry.microsoft.com
 +.tellmewhygame.com
 +.tfsallin.net
 +.th.bing.com
