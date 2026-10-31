@@ -1,6 +1,6 @@
 # microsoft — auto-generated, do not edit
 # source: MetaCubeX geosite:microsoft + custom.yaml
-# entries: 751
+# entries: 753
 +.1drv.com
 +.21vbc.com
 +.21vbluecloud.com
@@ -143,6 +143,7 @@
 +.bingparachute.com
 +.bingsandbox.com
 +.bingsettingssearch.trafficmanager.net
++.bingstatic.com
 +.bingvisualsearch.com
 +.bingworld.com
 +.bj1.api.bing.com
@@ -488,6 +489,7 @@
 +.msfteducation.ca
 +.msftncsi.com
 +.msftnet.org
++.msftstatic.com
 +.msgamesresearch.com
 +.msgamestudios.com
 +.mshome.net
