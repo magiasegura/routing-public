@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 206
+# entries: 215
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -19,7 +19,11 @@
 +.antigravity.googleapis.com
 +.antspace.dev
 +.anythingllm.com
++.appsgenaiserver-pa.clients.google.com
++.appsgenaiserver-pa.clients6.google.com
++.appsgenaiserver-pa.googleapis.com
 +.arena.ai
++.artificialanalysis.ai
 +.bard.google.com
 +.cerebras.ai
 +.character.ai
@@ -47,6 +51,7 @@
 +.claudestudio.com
 +.claudeusercontent.com
 +.clawhub.ai
++.cline.bot
 +.clipdrop.co
 +.cloudaicompanion.googleapis.com
 +.cloudcode-pa.googleapis.com
@@ -59,6 +64,8 @@
 +.comfy.org
 +.comfyci.org
 +.comfyregistry.org
++.commandcode.ai
++.context7.com
 +.copilot-stg.com
 +.copilot.cloud.microsoft
 +.copilot.com
@@ -134,6 +141,7 @@
 +.manuscdn.com
 +.marscode.com
 +.meta.ai
++.metaaiusercontent.com
 +.metaaivm.com
 +.midjourney.com
 +.minimax.io
@@ -149,6 +157,7 @@
 +.notebooklm.googleapis.com
 +.notegpt.io
 +.notion.so
++.nousresearch.com
 +.novelai.net
 +.oaistatic.com
 +.oaistatsig.com

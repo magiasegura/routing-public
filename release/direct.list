@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3280
+# entries: 3282
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -989,6 +989,7 @@
 +.bingapistatistics.com
 +.bingparachute.com
 +.bingsandbox.com
++.bingstatic.com
 +.bingvisualsearch.com
 +.bingworld.com
 +.bitrix.info
@@ -1591,7 +1592,6 @@
 +.icloud-isupport.com
 +.icloud-sandbox.com
 +.icloud.ch
-+.icloud.cn
 +.icloud.com
 +.icloud.com.cn
 +.icloud.de
@@ -1869,6 +1869,7 @@
 +.itunesu.net
 +.iutunes.com
 +.ivi.ru
++.ivi.tv
 +.ivicdn.tv
 +.iwork.com
 +.iwork.se
@@ -2318,6 +2319,7 @@
 +.msfteducation.ca
 +.msftncsi.com
 +.msftnet.org
++.msftstatic.com
 +.msgamesresearch.com
 +.msgamestudios.com
 +.mshome.net
