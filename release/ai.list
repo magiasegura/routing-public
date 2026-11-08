@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 215
+# entries: 217
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -112,12 +112,14 @@
 +.grazie.aws.intellij.net
 +.grok.com
 +.grok.x.com
++.grokbot.com
 +.grokipedia.com
 +.groq.com
 +.h2o.ai
 +.hf.co
 +.hf.space
 +.host.livekit.cloud
++.http-intake.logs.us5.datadoghq.com
 +.huggingface.co
 +.jasper.ai
 +.jetbrains.ai

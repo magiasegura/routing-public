@@ -1,6 +1,6 @@
 # proxy — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 156
+# entries: 157
 +.4pda.to
 +.ads.twitch.tv
 +.alfahost.io
@@ -88,6 +88,7 @@
 +.opensource.guide
 +.ovd.news
 +.playlist.ttvnw.net
++.production-copilot-host-westus.webpubsub.azure.com
 +.productionresultssa0.blob.core.windows.net
 +.productionresultssa1.blob.core.windows.net
 +.productionresultssa10.blob.core.windows.net

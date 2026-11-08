@@ -1,6 +1,6 @@
 # microsoft — auto-generated, do not edit
 # source: MetaCubeX geosite:microsoft + custom.yaml
-# entries: 753
+# entries: 754
 +.1drv.com
 +.21vbc.com
 +.21vbluecloud.com
@@ -582,6 +582,7 @@
 +.powerbi.com
 +.powershellgallery.com
 +.prodforza.blob.core.windows.net
++.production-copilot-host-westus.webpubsub.azure.com
 +.productionresultssa0.blob.core.windows.net
 +.productionresultssa1.blob.core.windows.net
 +.productionresultssa10.blob.core.windows.net
