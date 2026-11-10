@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3285
+# entries: 3286
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -2067,6 +2067,7 @@
 +.medsi.pro
 +.meetfasttrack.com
 +.meetyourdevices.com
++.megabitus.com
 +.megafon.com
 +.megafon.ru
 +.megamarket.ru
