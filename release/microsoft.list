@@ -1,6 +1,6 @@
 # microsoft — auto-generated, do not edit
 # source: MetaCubeX geosite:microsoft + custom.yaml
-# entries: 754
+# entries: 757
 +.1drv.com
 +.21vbc.com
 +.21vbluecloud.com
@@ -158,6 +158,7 @@
 +.breakdown.me
 +.browser.events.data.msn.cn
 +.browser.events.data.msn.com
++.builds.dotnet.microsoft.com
 +.c-msedge.net
 +.cafe.github.com
 +.callersbane.com
@@ -212,6 +213,7 @@
 +.docs.com
 +.doom.com
 +.dot.net
++.dotnetcli.trafficmanager.net
 +.download.microsoft.com
 +.download.visualstudio.microsoft.com
 +.download.windowsupdate.com
@@ -659,6 +661,7 @@
 +.storeedge.microsoft.com
 +.storeedgefd.dsx.mp.microsoft.com
 +.successwithteams.com
++.sundry-star-net-geo.trafficmanager.net
 +.surface.com
 +.surface.download.prss.microsoft.com
 +.surface.downloads.prss.microsoft.com
