@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 217
+# entries: 218
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -93,6 +93,7 @@
 +.duck.ai
 +.elevenlabs.com
 +.elevenlabs.io
++.elevenlabsusercontent.com
 +.envato-static.com
 +.envato.com
 +.envatousercontent.com

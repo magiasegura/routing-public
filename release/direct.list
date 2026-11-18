@@ -1,6 +1,6 @@
 # direct — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 3287
+# entries: 3286
 +.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.10.in-addr.arpa
 +.100.100.in-addr.arpa
@@ -3259,7 +3259,6 @@
 +.yandexdataschool.com
 +.yandexgo.com
 +.yandexwebcache.net
-+.yandexwebcache.org
 +.yango-b2b.com
 +.yango-team.com
 +.yango-tech.com
