@@ -1,6 +1,6 @@
 # reject — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 1225
+# entries: 1226
 +.1l-hit.mail.ru
 +.1l-hit.vkplay.ru
 +.1oavsblobprodcus350.blob.core.windows.net
@@ -1110,6 +1110,7 @@
 +.telemetry.microsoft.com
 +.telemetry.remoteapp.windowsazure.com
 +.telemetry.urs.microsoft.com
++.tencentads.com
 +.teredo.ipv6.microsoft.com
 +.test.activity.windows.com
 +.testads.api.my7v.com
