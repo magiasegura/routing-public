@@ -1,6 +1,6 @@
 # ai — auto-generated, do not edit
 # source: DigneZzZ/routing + custom.yaml
-# entries: 218
+# entries: 219
 +.agentclientprotocol.com
 +.ai.google.dev
 +.ai.studio
@@ -106,6 +106,7 @@
 +.gemini.gstatic.com
 +.geminiweb-pa.clients.google.com
 +.geminiweb-pa.clients6.google.com
++.gemma.ai
 +.generativeai.google
 +.generativelanguage.googleapis.com
 +.grammarly.com
