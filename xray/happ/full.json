@@ -10,7 +10,7 @@
   "DomesticDNSType": "DoH",
   "DomesticDNSDomain": "https://77.88.8.8/dns-query",
   "DomesticDNSIP": "77.88.8.8",
-  "LastUpdated": "1795653300",
+  "LastUpdated": "1795702255",
   "DnsHosts": {},
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
